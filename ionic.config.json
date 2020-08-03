@@ -1,0 +1,7 @@
+{
+  "name": "smartCenter",
+  "integrations": {
+    "capacitor": {}
+  },
+  "type": "angular"
+}
