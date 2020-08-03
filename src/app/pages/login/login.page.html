@@ -1,29 +1,31 @@
-<ion-header>
-  <ion-toolbar>
-    <ion-title>login</ion-title>
-  </ion-toolbar>
+<ion-header class="header-login">
+  <app-logo></app-logo>
 </ion-header>
 
 <ion-content>
-  <app-logo></app-logo>
-  <h1>Login</h1>
-<form>
-  <ion-list>
-    <ion-item>
-      <ion-label position="stacked">Username</ion-label>
-      <ion-input type="text"></ion-input>
-    </ion-item>
 
-    <ion-item>
-      <ion-label position="stacked">Password</ion-label>
-      <ion-input type="password"></ion-input>
-    </ion-item>
+<div class="container">
+  <div class="container-item-top">
+    <h1>LOGIN</h1>
+  </div>
+        <div class="container-item-center">
+          <ion-item>
+            <ion-icon class="icon" name="person"></ion-icon>
+            <ion-input placeholder="Username" type="text"></ion-input>
+          </ion-item>
 
-    <ion-item>
-      <a routerLink="/signup">Create account</a>
-    </ion-item>
+          <ion-item>
+            <ion-icon class="icon" name="lock-open"></ion-icon>
+            <ion-input placeholder="Password" type="password" ></ion-input>
+          </ion-item>
+        </div>
 
-    <ion-button expand="block" shape="round" >Login</ion-button>
-  </ion-list>
-</form>
+        <div class="container-item-bottom">
+          <ion-button  shape="round" >Login</ion-button>
+          <ion-item trasparent class="registrazione">
+            Don't have an account?<a routerLink="/signup">Create account</a>
+          </ion-item>
+        </div>
+</div>
+
 </ion-content>
