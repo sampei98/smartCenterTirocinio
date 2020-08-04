@@ -32,6 +32,10 @@ const routes: Routes = [
   },  {
     path: 'parcheggio',
     loadChildren: () => import('./client/parcheggio/parcheggio.module').then( m => m.ParcheggioPageModule)
+  },
+  {
+    path: 'posto',
+    loadChildren: () => import('./client/posto/posto.module').then( m => m.PostoPageModule)
   }
 
 

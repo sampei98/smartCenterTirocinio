@@ -1,0 +1,51 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>posto</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-text>
+      Prenota il tuo posto {{ id }}
+    </ion-text>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Data</ion-label>
+    <ion-datetime disabled="true" displayFormat="DDDD MMM D, YYYY" min="2020" max="2021" value="2020-09-09"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label>Ora</ion-label>
+    <ion-datetime disabled="true" displayFormat="h:mm A" minuteValues="0,15,30,45" value="12:00"></ion-datetime>
+  </ion-item>
+
+  <ion-grid>
+    <ion-row>
+      <ion-col class="legenda">
+        <ion-item>
+          <ion-icon name="car-outline" color="success"></ion-icon>
+          <ion-label>Libero</ion-label>
+        </ion-item>
+      </ion-col>
+      <ion-col class="legenda">
+        <ion-item>
+          <ion-icon name="car-outline" color="danger"></ion-icon>
+          <ion-label>Occupato</ion-label>
+        </ion-item>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
+
+
+
+
+
+  <ion-footer class="fixed">
+    <ion-toolbar>
+      <app-home></app-home>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

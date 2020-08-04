@@ -26,6 +26,10 @@ const routes: Routes = [
       {
         path: 'profile',
         loadChildren: () => import('../navbarClient/profile-client/profile-client.module').then( m => m.ProfileClientPageModule)
+      },
+      {
+        path: '',
+        loadChildren: () => import('../navbarClient/home-nav/home-nav.module').then( m => m.HomeNavPageModule)
       }
     ]
   }
