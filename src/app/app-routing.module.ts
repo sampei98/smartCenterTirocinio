@@ -29,7 +29,11 @@ const routes: Routes = [
   {
     path: 'profile-client',
     loadChildren: () => import('./navbarClient/profile-client/profile-client.module').then( m => m.ProfileClientPageModule)
+  },  {
+    path: 'parcheggio',
+    loadChildren: () => import('./client/parcheggio/parcheggio.module').then( m => m.ParcheggioPageModule)
   }
+
 
 ];
 @NgModule({
