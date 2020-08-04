@@ -7,6 +7,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class ParcheggioPage implements OnInit {
 
+  sliderOpts = {
+    zoom: {
+      maxRatio: 2
+    }
+  };
   constructor() { }
 
   ngOnInit() {

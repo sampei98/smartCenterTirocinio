@@ -21,9 +21,13 @@
     <ion-datetime displayFormat="h:mm A" minuteValues="0,15,30,45"></ion-datetime>
   </ion-item>
 
-  <ion-scroll maxZoom="2" zoom="true" scrollY="true" style="width: 100%; height: 100%">
-    <div class="map-div"></div>
-  </ion-scroll>
+  <ion-slides [options]="sliderOpts" zoom="">
+    <ion-slide >
+      <div class="swiper-zoom-container">
+        <img src="../../../assets/images/mappa-parcheggio.png">
+      </div>
+    </ion-slide>
+  </ion-slides>
 
   <app-home></app-home>
 </ion-content>
