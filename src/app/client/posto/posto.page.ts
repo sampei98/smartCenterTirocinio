@@ -30,7 +30,7 @@ export class PostoPage implements OnInit {
     await alert.present();
   }
 
-  async postoLibero() {
+  async postoLibero(posto) {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
       header: 'Confirm!',
@@ -46,8 +46,9 @@ export class PostoPage implements OnInit {
         }, {
           text: 'Si',
           handler: () => {
-            console.log('Confirm Si');
-            this.router.navigate(['/success']);
+            console.log('Confirm Si ' + posto);
+            posto = '' + this.id + ', posto: ' + posto;
+            this.router.navigate(['/success/Posto prenotato/' + posto]);
           }
         }
       ]
