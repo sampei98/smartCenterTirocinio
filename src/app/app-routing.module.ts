@@ -36,6 +36,10 @@ const routes: Routes = [
   {
     path: 'posto',
     loadChildren: () => import('./client/posto/posto.module').then( m => m.PostoPageModule)
+  },
+  {
+    path: 'success',
+    loadChildren: () => import('./client/success/success.module').then( m => m.SuccessPageModule)
   }
 
 

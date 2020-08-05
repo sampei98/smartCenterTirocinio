@@ -1,5 +1,6 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute} from '@angular/router';
+import {ActivatedRoute, Router} from '@angular/router';
+import {AlertController} from '@ionic/angular';
 
 @Component({
   selector: 'app-posto',
@@ -9,10 +10,50 @@ import {ActivatedRoute} from '@angular/router';
 export class PostoPage implements OnInit {
 
   id;
-  constructor(private route: ActivatedRoute) { }
+  constructor(private route: ActivatedRoute,
+              public alertController: AlertController,
+              private router: Router) { }
 
   ngOnInit() {
     this.id = this.route.snapshot.paramMap.get('id');
+  }
+
+  async postoOccupato() {
+    const alert = await this.alertController.create({
+      cssClass: 'my-custom-class',
+      header: 'ATTENZIONE!',
+      subHeader: 'Posto occupato!',
+      message: 'Selezionare un posto libero.',
+      buttons: ['OK']
+    });
+
+    await alert.present();
+  }
+
+  async postoLibero() {
+    const alert = await this.alertController.create({
+      cssClass: 'my-custom-class',
+      header: 'Confirm!',
+      message: 'Vuoi prenotare il posto selezionato?',
+      buttons: [
+        {
+          text: 'Cancel',
+          role: 'cancel',
+          cssClass: 'secondary',
+          handler: (blah) => {
+            console.log('Confirm Cancel: blah');
+          }
+        }, {
+          text: 'Si',
+          handler: () => {
+            console.log('Confirm Si');
+            this.router.navigate(['/success']);
+          }
+        }
+      ]
+    });
+
+    await alert.present();
   }
 
 }
