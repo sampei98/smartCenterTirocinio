@@ -1,17 +1,13 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>posto</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/parcheggio"></ion-back-button>
+    </ion-buttons>
+    <ion-title> {{ id }}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
-  <ion-item>
-    <ion-text>
-      Prenota il tuo posto {{ id }}
-    </ion-text>
-  </ion-item>
-
   <ion-item>
     <ion-label>Data</ion-label>
     <ion-datetime disabled="true" displayFormat="DDDD MMM D, YYYY" min="2020" max="2021" value="2020-09-09"></ion-datetime>

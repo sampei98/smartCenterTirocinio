@@ -1,0 +1,163 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/client"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Negozi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+  <ion-list>
+    <ion-grid>
+      <ion-row>
+        <ion-col width-50>
+          <ion-card>
+            <ion-img src="../../../assets/logoNegozi/mediaWorld.png"></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>
+                <ion-icon name="people-outline"></ion-icon>
+                Persone: 23/34
+              </ion-card-subtitle>
+              <ion-card-title>Mediaworld</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+             Distanza: 10mt.
+              <ion-chip >
+                <ion-icon name="star" color="dark"></ion-icon>
+                <ion-label>4,6</ion-label>
+              </ion-chip>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col width-50>
+          <ion-card>
+            <ion-img  src="../../../assets/logoNegozi/decathlon.png"></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>
+                <ion-icon name="people-outline"></ion-icon>
+                Persone: 23/34
+              </ion-card-subtitle>
+              <ion-card-title>Mediaworld</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Distanza: 10mt.
+              <ion-chip >
+                <ion-icon name="star" color="dark"></ion-icon>
+                <ion-label>4,6</ion-label>
+              </ion-chip>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col width-50>
+          <ion-card>
+            <ion-img src="../../../assets/logoNegozi/bata.png"></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>
+                <ion-icon name="people-outline"></ion-icon>
+                Persone: 23/34
+              </ion-card-subtitle>
+              <ion-card-title>Bata</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Distanza: 10mt.
+              <ion-chip >
+                <ion-icon name="star" color="dark"></ion-icon>
+                <ion-label>4,6</ion-label>
+              </ion-chip>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col width-50>
+          <ion-card>
+            <ion-img  src="../../../assets/logoNegozi/harmont.png"></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>
+                <ion-icon name="people-outline"></ion-icon>
+                Persone: 23/34
+              </ion-card-subtitle>
+              <ion-card-title>Mediaworld</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Distanza: 10mt.
+              <ion-chip >
+                <ion-icon name="star" color="dark"></ion-icon>
+                <ion-label>4,6</ion-label>
+              </ion-chip>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+
+
+      <ion-row>
+        <ion-col width-50>
+          <ion-card>
+            <ion-img src="../../../assets/logoNegozi/ralph.png"></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>
+                <ion-icon name="people-outline"></ion-icon>
+                Persone: 23/34
+              </ion-card-subtitle>
+              <ion-card-title>Mediaworld</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Distanza: 10mt.
+              <ion-chip >
+                <ion-icon name="star" color="dark"></ion-icon>
+                <ion-label>4,6</ion-label>
+              </ion-chip>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+
+        <ion-col width-50>
+          <ion-card>
+            <ion-img  src="../../../assets/logoNegozi/yama.jpg"></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>
+                <ion-icon name="people-outline"></ion-icon>
+                Persone: 23/34
+              </ion-card-subtitle>
+              <ion-card-title>Mediaworld</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+              Distanza: 10mt.
+              <ion-chip >
+                <ion-icon name="star" color="dark"></ion-icon>
+                <ion-label>4,6</ion-label>
+              </ion-chip>
+            </ion-card-content>
+          </ion-card>
+        </ion-col>
+      </ion-row>
+    </ion-grid>
+  </ion-list>
+
+</ion-content>
+
+<script>
+  const searchbar = document.querySelector('ion-searchbar');
+  const items = Array.from(document.querySelector('ion-list').children);
+
+  searchbar.addEventListener('ionInput', handleInput);
+
+  function handleInput(event) {
+    const query = event.target.value.toLowerCase();
+    requestAnimationFrame(() => {
+      items.forEach(item => {
+        const shouldShow = item.textContent.toLowerCase().indexOf(query) > -1;
+        item.style.display = shouldShow ? 'block' : 'none';
+      });
+    });
+  }
+</script>

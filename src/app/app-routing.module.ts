@@ -40,6 +40,10 @@ const routes: Routes = [
   {
     path: 'success',
     loadChildren: () => import('./client/success/success.module').then( m => m.SuccessPageModule)
+  },
+  {
+    path: 'negozi',
+    loadChildren: () => import('./client/negozi/negozi.module').then( m => m.NegoziPageModule)
   }
 
 
