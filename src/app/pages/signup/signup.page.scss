@@ -1,0 +1,45 @@
+.header-login{
+  background: #ffcc66;
+  height: 30%;
+}
+.icon{
+  padding-right: 15px;
+}
+
+.container{
+  height: 70%;
+  display: flex;
+  align-items: stretch;
+  justify-content: center;
+  flex-direction: column;
+}
+.container-item-top{
+  flex-grow: 1;
+}
+.container-item-top > h1{
+  text-align: center;
+}
+.container-item-center{
+  flex-grow: 3;
+  display: flex;
+  margin-right: 20px;
+  margin-left: 20px;
+  flex-direction: column;
+}
+.container-item-bottom{
+  flex-grow: 2;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+}
+.registrazione{
+  font-size: 12px;
+}
+[trasparent]{
+  --background: transparent;
+}
+
+.row{
+  padding-bottom: 25px;
+}

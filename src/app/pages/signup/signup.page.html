@@ -1,36 +1,36 @@
-<ion-header>
-  <ion-toolbar color="mango">
-    <ion-title>signup</ion-title>
-  </ion-toolbar>
+<ion-header class="header-login">
+  <app-logo></app-logo>
 </ion-header>
 
-
 <ion-content>
-  <app-logo></app-logo>
-  <h1>Create Account</h1>
-  <form>
-    <ion-list>
-      <ion-item>
-        <ion-label position="stacked">Email</ion-label>
-        <ion-input type="email"></ion-input>
+
+  <div class="container">
+    <div class="container-item-top">
+      <h1>Create Account</h1>
+    </div>
+    <div class="container-item-center">
+      <ion-item class="row">
+        <ion-icon class="icon" name="mail"></ion-icon>
+        <ion-input placeholder="Email" type="text"></ion-input>
       </ion-item>
 
-      <ion-item>
-        <ion-label position="stacked">Username</ion-label>
-        <ion-input type="text"></ion-input>
+      <ion-item class="row">
+        <ion-icon class="icon" name="person"></ion-icon>
+        <ion-input placeholder="Username" type="text"></ion-input>
       </ion-item>
 
-      <ion-item>
-        <ion-label position="stacked">Password</ion-label>
-        <ion-input type="password"></ion-input>
+      <ion-item class="row">
+        <ion-icon class="icon" name="lock-open"></ion-icon>
+        <ion-input placeholder="Password" type="password" ></ion-input>
       </ion-item>
+    </div>
 
-
-      <ion-item>
-       Already you have an account? <a routerLink="/login">Login </a>
+    <div class="container-item-bottom">
+      <ion-button  shape="round" >Sign up</ion-button>
+      <ion-item trasparent class="registrazione">
+        Already you have an account? <a routerLink="/login">Login </a>
       </ion-item>
+    </div>
+  </div>
 
-      <ion-button expand="block" shape="round" >Sign up</ion-button>
-    </ion-list>
-  </form>
 </ion-content>
