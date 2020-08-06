@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>notifiche</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-item>
+      <ion-icon name="notifications-outline" slot="start"></ion-icon>
+      <ion-label>Bentornato in Smart Center</ion-label>
+      <ion-button slot="end" (click)="presentAlert('Bentornato in Smart Center', 'Ti ricordiamo di indossare la mascherina e di mantenere le distanze di sicurezza.')"><ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+    </ion-item>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label color="medium">
+          Ti ricordiamo di indossare la mascherina e di mantenere le distanze di sicurezza.
+        </ion-label>
+      </ion-item>
+      <div class="orario">
+        <ion-label>9:20 AM</ion-label>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="notifications-outline" slot="start"></ion-icon>
+      <ion-label>Caricamento soldi</ion-label>
+      <ion-button slot="end" (click)="presentAlert('Caricamento soldi', 'Sono stati caricati 100$ con successo.')"><ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+    </ion-item>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label color="medium">
+          Sono stati caricati 100$ con successo.
+        </ion-label>
+      </ion-item>
+      <div class="orario">
+        <ion-label>Yesterday</ion-label>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="notifications-outline" slot="start"></ion-icon>
+      <ion-label>Contatto con contagiato</ion-label>
+      <ion-button slot="end" (click)="presentAlert('Contatto con contagiato', 'Sei stato a contatto con un contaggiato, la invitiamo a rivolgersi ad un medico il prima possibile.')"><ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+    </ion-item>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label color="medium">
+          Sei stato a contatto con un contaggiato, la invitiamo a rivolgersi ad un medico il prima possibile
+        </ion-label>
+      </ion-item>
+      <div class="orario">
+        <ion-label>20 Sep</ion-label>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+</ion-content>

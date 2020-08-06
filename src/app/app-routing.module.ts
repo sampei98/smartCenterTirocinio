@@ -61,7 +61,11 @@ const routes: Routes = [
   {
     path: 'scontrino',
     loadChildren: () => import('./client/scontrino/scontrino.module').then( m => m.ScontrinoPageModule)
+  },  {
+    path: 'notifiche',
+    loadChildren: () => import('./client/notifiche/notifiche.module').then( m => m.NotifichePageModule)
   }
+
 
 
 
