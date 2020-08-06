@@ -12,7 +12,7 @@
     <ion-searchbar (ionInput)="FilterJSONData($event)"></ion-searchbar>
   </ion-toolbar>
   <ion-list>
-    <ion-card *ngFor="let item of jsonData">
+    <ion-card *ngFor="let item of jsonData;" (click)="intemClicked(item)">
       <ion-img src={{item.src}}></ion-img>
       <ion-card-header>
         <ion-card-subtitle>

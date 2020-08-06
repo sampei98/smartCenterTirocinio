@@ -45,7 +45,11 @@ const routes: Routes = [
   {
     path: 'view-negozi',
     loadChildren: () => import('./client/view-negozi/view-negozi.module').then( m => m.ViewNegoziPageModule)
+  },  {
+    path: 'detail-negozio',
+    loadChildren: () => import('./client/detail-negozio/detail-negozio.module').then( m => m.DetailNegozioPageModule)
   }
+
 
 
 ];

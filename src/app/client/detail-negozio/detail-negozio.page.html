@@ -1,0 +1,54 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/view-negozi"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{data.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-label>Orari di apertura</ion-label>
+  </ion-item>
+  <ion-list lines="none">
+    <ion-item>
+      <ion-label>Lunedì</ion-label>
+      <ion-label>8:30-21:00</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Martedì</ion-label>
+      <ion-label>8:30-21:00</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Mercoledì</ion-label>
+      <ion-label>8:30-21:00</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Giovedì</ion-label>
+      <ion-label>8:30-21:00</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Venerdì</ion-label>
+      <ion-label>8:30-21:00</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Sabato</ion-label>
+      <ion-label>8:30-21:00</ion-label>
+    </ion-item>
+    <ion-item>
+      <ion-label>Domenica</ion-label>
+      <ion-label>9:30-21:00</ion-label>
+    </ion-item>
+  </ion-list>
+
+  <ion-item>
+    <ion-label><ion-icon name="call"></ion-icon>  Recapito telefonico: {{data.cel}}</ion-label>
+  </ion-item>
+  <div class="container">
+    <ion-button  shape="round"  >Offerte <ion-icon name="chevron-forward"></ion-icon></ion-button>
+    <ion-button  shape="round"  >Recensioni <ion-icon name="chevron-forward"></ion-icon></ion-button>
+    <ion-button  shape="round"  >Prodotti <ion-icon name="chevron-forward"></ion-icon></ion-button>
+  </div>
+  <app-home></app-home>
+</ion-content>
