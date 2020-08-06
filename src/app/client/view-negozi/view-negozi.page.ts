@@ -26,6 +26,7 @@ export class ViewNegoziPage implements OnInit {
     }
   }
 
+  // @ts-ignore
   initializaJSONData() {
     this.jsonData = [
       {
@@ -34,7 +35,30 @@ export class ViewNegoziPage implements OnInit {
         persone: '12/70',
         distanza: '10 mt',
         valutazione: '4,6',
-        cel: '0824 348125'
+        cel: '0824 348125',
+        prodotti : [
+            {
+          nameProdotto: 'APPLE iPhone 11 128GB Bianco',
+          dis: 'ipnhon',
+          prezzo: '700,99',
+          descrizione: 'aaaaaa',
+          srcPro: '../../../assets/prodotti/iphone.jpg'
+        },
+          {
+            nameProdotto: 'SAMSUNG Galaxy S20 4G Cloud Blue',
+            dis: '2',
+            prezzo: '899,99',
+            descrizione: 'bbbbbbb',
+            srcPro: '../../../assets/prodotti/s20.jpg'
+          },
+          {
+            nameProdotto: 'HUAWEI Matebook D 14',
+            dis: '4',
+            prezzo: '599,00',
+            descrizione: 'ccc',
+            srcPro: '../../../assets/prodotti/matebook.jpg'
+          }
+        ]
       },
       {
         src: '../../../assets/logoNegozi/ralph.png',

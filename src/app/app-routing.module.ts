@@ -45,9 +45,18 @@ const routes: Routes = [
   {
     path: 'view-negozi',
     loadChildren: () => import('./client/view-negozi/view-negozi.module').then( m => m.ViewNegoziPageModule)
-  },  {
+  },
+  {
     path: 'detail-negozio',
     loadChildren: () => import('./client/detail-negozio/detail-negozio.module').then( m => m.DetailNegozioPageModule)
+  },
+  {
+    path: 'detail-negozio-product',
+    loadChildren: () => import('./client/detail-negozio-product/detail-negozio-product.module').then( m => m.DetailNegozioProductPageModule)
+  },
+  {
+    path: 'detail-negozio-product-info',
+    loadChildren: () => import('./client/detail-negozio-product-info/detail-negozio-product-info.module').then( m => m.DetailNegozioProductInfoPageModule)
   }
 
 

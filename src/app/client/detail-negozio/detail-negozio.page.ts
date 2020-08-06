@@ -1,5 +1,5 @@
 import { Component, OnInit } from '@angular/core';
-import {ActivatedRoute, Router} from '@angular/router';
+import {ActivatedRoute, NavigationExtras, Router} from '@angular/router';
 
 @Component({
   selector: 'app-detail-negozio',
@@ -9,7 +9,7 @@ import {ActivatedRoute, Router} from '@angular/router';
 export class DetailNegozioPage implements OnInit {
   data: any;
   constructor(private route: ActivatedRoute, private router: Router)  {
-    this.route.queryParams.subscribe(params =>{
+    this.route.queryParams.subscribe(params => {
       if (params && params.special){
         this.data = JSON.parse(params.special) ;
       }
@@ -19,4 +19,21 @@ export class DetailNegozioPage implements OnInit {
   ngOnInit() {
   }
 
+  showProduct() {
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        special: JSON.stringify(this.data)
+      }
+    };
+    this.router.navigate(['detail-negozio-product'], navigationExtras);
+  }
+
+  showOfferte() {
+    console.log('offerte');
+  }
+
+  showRecensioni() {
+    alert('ciao');
+    console.log('recensioni');
+  }
 }

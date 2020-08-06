@@ -46,9 +46,8 @@
     <ion-label><ion-icon name="call"></ion-icon>  Recapito telefonico: {{data.cel}}</ion-label>
   </ion-item>
   <div class="container">
-    <ion-button  shape="round"  >Offerte <ion-icon name="chevron-forward"></ion-icon></ion-button>
-    <ion-button  shape="round"  >Recensioni <ion-icon name="chevron-forward"></ion-icon></ion-button>
-    <ion-button  shape="round"  >Prodotti <ion-icon name="chevron-forward"></ion-icon></ion-button>
+    <ion-button  shape="round"  (click)="showOfferte()" > Offerte <ion-icon name="chevron-forward"></ion-icon></ion-button>
+    <ion-button  shape="round"  (click)="showRecensioni()" > Recensioni <ion-icon name="chevron-forward"></ion-icon></ion-button>
+    <ion-button  shape="round"  (click)="showProduct()"> Prodotti <ion-icon name="chevron-forward"></ion-icon></ion-button>
   </div>
-  <app-home></app-home>
 </ion-content>
