@@ -48,6 +48,10 @@ const routes: Routes = [
   },  {
     path: 'detail-negozio',
     loadChildren: () => import('./client/detail-negozio/detail-negozio.module').then( m => m.DetailNegozioPageModule)
+  },
+  {
+    path: 'scontrino',
+    loadChildren: () => import('./client/scontrino/scontrino.module').then( m => m.ScontrinoPageModule)
   }
 
 
