@@ -1,0 +1,25 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/view-negozi"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{data.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-toolbar>
+    <ion-searchbar (ionInput)="FilterJSONData($event)"></ion-searchbar>
+  </ion-toolbar>
+  <ion-list>
+    <ion-card *ngFor="let item of data.prodotti;" (click)="intemClicked(item)">
+      <ion-img src={{item.srcPro}}></ion-img>
+      <ion-card-header>
+        <ion-card-title>{{item.nameProdotto}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Prezzo: {{item.prezzo}} $
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>
