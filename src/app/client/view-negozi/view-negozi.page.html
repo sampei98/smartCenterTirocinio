@@ -1,0 +1,33 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/client"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Negozi</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-toolbar>
+    <ion-searchbar (ionInput)="FilterJSONData($event)"></ion-searchbar>
+  </ion-toolbar>
+  <ion-list>
+    <ion-card *ngFor="let item of jsonData">
+      <ion-img src={{item.src}}></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>
+          <ion-icon name="people-outline"></ion-icon>
+          Persone: {{item.persone}}
+        </ion-card-subtitle>
+        <ion-card-title>{{item.name}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+        Distanza: {{item.distanza}}
+        <ion-chip >
+          <ion-icon name="star" color="dark"></ion-icon>
+          <ion-label>{{item.valutazione}}</ion-label>
+        </ion-chip>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>
