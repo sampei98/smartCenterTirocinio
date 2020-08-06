@@ -29,7 +29,8 @@ const routes: Routes = [
   {
     path: 'profile-client',
     loadChildren: () => import('./navbarClient/profile-client/profile-client.module').then( m => m.ProfileClientPageModule)
-  },  {
+  },
+  {
     path: 'parcheggio',
     loadChildren: () => import('./client/parcheggio/parcheggio.module').then( m => m.ParcheggioPageModule)
   },
@@ -42,8 +43,8 @@ const routes: Routes = [
     loadChildren: () => import('./client/success/success.module').then( m => m.SuccessPageModule)
   },
   {
-    path: 'negozi',
-    loadChildren: () => import('./client/negozi/negozi.module').then( m => m.NegoziPageModule)
+    path: 'view-negozi',
+    loadChildren: () => import('./client/view-negozi/view-negozi.module').then( m => m.ViewNegoziPageModule)
   }
 
 
