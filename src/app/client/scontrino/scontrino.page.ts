@@ -1,20 +1,22 @@
 import { Component, OnInit } from '@angular/core';
+import {NavController} from '@ionic/angular';
 import { BarcodeScanner , BarcodeScannerOptions } from '@ionic-native/barcode-scanner/ngx';
-import {NavController, NavParams} from '@ionic/angular';
-
 
 @Component({
-  selector: 'app-pay-client',
-  templateUrl: './pay-client.page.html',
-  styleUrls: ['./pay-client.page.scss'],
+  selector: 'app-scontrino',
+  templateUrl: './scontrino.page.html',
+  styleUrls: ['./scontrino.page.scss'],
 })
-export class PayClientPage implements OnInit {
+export class ScontrinoPage implements OnInit {
   scanData: {};
+  punti: string;
   datiLetti: string;
   formatoLetto: string;
   successMessage: string;
   options: BarcodeScannerOptions;
-  constructor(public navCtrl: NavController, private barcodeScanner: BarcodeScanner) { }
+  constructor(public navCtrl: NavController, private barcodeScanner: BarcodeScanner) {
+    this.punti = '230';
+  }
 
   ngOnInit() {
   }
@@ -28,7 +30,8 @@ export class PayClientPage implements OnInit {
       this.scanData = barcodeData;
       this.datiLetti = barcodeData.text;
       this.formatoLetto = barcodeData.format;
-      this.successMessage = 'Pagamento effettuato con successo';
+      this.punti = '280';
+      this.successMessage = 'Scontrino caricato con successo, ti sono stati caricati 50 punti!';
     }, (err) => {
       console.log('Error occured : ' + err);
     });

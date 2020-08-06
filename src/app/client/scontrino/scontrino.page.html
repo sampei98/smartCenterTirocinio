@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>scontrino</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-header>
+      <ion-card-subtitle align="center"><ion-icon name="scan-circle-outline" size="large"></ion-icon></ion-card-subtitle>
+      <ion-card-title align="center">Il tuo saldo: <strong>{{punti}} punti</strong></ion-card-title>
+    </ion-header>
+
+    <ion-card-content>
+      <ion-button expand="block" (click)="scan()">Clicca per scansionare</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-label color="success" align="center">
+    {{successMessage}}
+  </ion-label>
+
+</ion-content>
