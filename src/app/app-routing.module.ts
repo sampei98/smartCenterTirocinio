@@ -64,6 +64,10 @@ const routes: Routes = [
   },  {
     path: 'notifiche',
     loadChildren: () => import('./client/notifiche/notifiche.module').then( m => m.NotifichePageModule)
+  },
+  {
+    path: 'invite-friend',
+    loadChildren: () => import('./client/invite-friend/invite-friend.module').then( m => m.InviteFriendPageModule)
   }
 
 
