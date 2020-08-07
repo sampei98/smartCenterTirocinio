@@ -61,7 +61,8 @@ const routes: Routes = [
   {
     path: 'scontrino',
     loadChildren: () => import('./client/scontrino/scontrino.module').then( m => m.ScontrinoPageModule)
-  },  {
+  },
+  {
     path: 'notifiche',
     loadChildren: () => import('./client/notifiche/notifiche.module').then( m => m.NotifichePageModule)
   },
@@ -92,6 +93,10 @@ const routes: Routes = [
   {
     path: 'aggiungi-carta',
     loadChildren: () => import('./client/aggiungi-carta/aggiungi-carta.module').then( m => m.AggiungiCartaPageModule)
+  },
+  {
+    path: 'detail-sale',
+    loadChildren: () => import('./client/detail-sale/detail-sale.module').then( m => m.DetailSalePageModule)
   }
 
 

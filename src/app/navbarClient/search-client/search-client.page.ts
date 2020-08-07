@@ -1,6 +1,7 @@
 import { Component, OnInit } from '@angular/core';
 import {ViewNegoziPage} from '../../client/view-negozi/view-negozi.page';
 import {NegoziServiceService} from '../../services/negozi-service.service';
+import {ActivatedRoute, NavigationExtras, Router} from '@angular/router';
 
 @Component({
   selector: 'app-search-client',
@@ -11,7 +12,7 @@ export class SearchClientPage implements OnInit {
 
  prod: any[];
 
-  constructor(private myService: NegoziServiceService) {
+  constructor(private myService: NegoziServiceService, private route: ActivatedRoute, private router: Router) {
       this.prod = myService.initializaJSONData();
       this.prod = myService.getProdotti();
   }
@@ -28,5 +29,14 @@ export class SearchClientPage implements OnInit {
                 return (item.nameProdotto.toLowerCase().indexOf(val.toLowerCase()) > -1);
             });
         }
+    }
+
+    intemClicked(item: any) {
+        const navigationExtras: NavigationExtras = {
+            queryParams: {
+                special: JSON.stringify(item)
+            }
+        };
+        this.router.navigate(['detail-negozio-product-info'], navigationExtras);
     }
 }
