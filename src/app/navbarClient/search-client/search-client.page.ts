@@ -39,4 +39,7 @@ export class SearchClientPage implements OnInit {
         };
         this.router.navigate(['detail-negozio-product-info'], navigationExtras);
     }
+    getNameNegozioByProduct(item: any){
+        return this.myService.getNameNegozio(this.myService.getNegozioByProdotto(item));
+    }
 }

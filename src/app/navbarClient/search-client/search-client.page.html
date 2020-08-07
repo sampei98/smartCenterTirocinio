@@ -14,6 +14,7 @@
       <ion-card *ngFor="let item of prod"(click)="intemClicked(item)">
         <ion-img src={{item.srcPro}}></ion-img>
         <ion-card-header>
+            <ion-card-subtitle>{{getNameNegozioByProduct(item)}}</ion-card-subtitle>
           <ion-card-title>{{item.nameProdotto}}</ion-card-title>
         </ion-card-header>
         <ion-card-content>

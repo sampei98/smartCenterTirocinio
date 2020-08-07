@@ -170,6 +170,18 @@ export class NegoziServiceService {
       }
     }
   }
+  getNegozioByProdotto(ev: any){
+    const r = this.jsonData.filter((elem) => {
+      return elem.prodotti;
+    });
+    for (let i = 0; i !== r.length; i++){
+      for (let j = 0 ; j !== r[i].prodotti.length; j++){
+        if (r[i].prodotti[j] === ev){
+          return r[i];
+        }
+      }
+    }
+  }
   getNameNegozio(ev: any){
     for (let i = 0; i !== this.jsonData.length; i++){
       if (this.jsonData[i].name === ev.name){
