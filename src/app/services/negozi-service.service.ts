@@ -6,6 +6,7 @@ import { Injectable } from '@angular/core';
 export class NegoziServiceService {
   jsonData: any = [];
   arrayProdotti: any [] = [];
+  arrayOfferte: any [] = [];
   constructor() { }
 
    initializaJSONData() {
@@ -38,6 +39,15 @@ export class NegoziServiceService {
             prezzo: '599,00',
             descrizione: 'ccc',
             srcPro: '../../../assets/prodotti/matebook.jpg'
+          }
+        ],
+        offerte : [
+          {
+            breveDescrizione: 'Sottocosto mediaword',
+            descrizione: 'sono la descrizione lunga',
+            tipo: 'volantino',
+            dataInizio: 'oggi',
+            dataFine: 'domani'
           }
         ]
       },
@@ -94,7 +104,16 @@ export class NegoziServiceService {
         persone: '9/34',
         distanza: '22 mt',
         valutazione: '4,3',
-        cel: '0824 348118'
+        cel: '0824 348118',
+        offerte : [
+          {
+            breveDescrizione: 'Sottocosto tommy',
+            descrizione: 'sono la descrizione lunga',
+            tipo: 'volantino',
+            dataInizio: 'oggi',
+            dataFine: 'domani'
+          }
+        ]
       },
       {
         src: '../../../assets/logoNegozi/decathlon.png',
@@ -126,7 +145,44 @@ export class NegoziServiceService {
       }
     }
     return this.arrayProdotti;
-
-
   }
+  getOfferte() {
+    this.arrayOfferte = [];
+    const r = this.jsonData.filter((elem) => {
+      return elem.offerte;
+    });
+    for (let i = 0; i !== r.length; i++){
+      for (let j = 0 ; j !== r[i].offerte.length; j++){
+        this.arrayOfferte.push(r[i].offerte[j]);
+      }
+    }
+    return this.arrayOfferte;
+  }
+  getNegozioByOfferta(ev: any){
+    const r = this.jsonData.filter((elem) => {
+      return elem.offerte;
+    });
+    for (let i = 0; i !== r.length; i++){
+      for (let j = 0 ; j !== r[i].offerte.length; j++){
+        if (r[i].offerte[j] === ev){
+          return r[i];
+        }
+      }
+    }
+  }
+  getNameNegozio(ev: any){
+    for (let i = 0; i !== this.jsonData.length; i++){
+      if (this.jsonData[i].name === ev.name){
+        return this.jsonData[i].name;
+      }
+    }
+  }
+  getImgNegozio(ev: any){
+    for (let i = 0; i !== this.jsonData.length; i++){
+      if (this.jsonData[i].src === ev.src){
+        return this.jsonData[i].src;
+      }
+    }
+  }
+
 }

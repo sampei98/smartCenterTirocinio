@@ -1,9 +1,25 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>saleClient</ion-title>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/client"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Offerte</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
-
+  <ion-toolbar>
+    <ion-searchbar></ion-searchbar>
+  </ion-toolbar>
+  <ion-list>
+    <ion-card *ngFor="let item of off" (click)="intemClicked(item)">
+      <ion-img src={{getImgNegozio(item)}}></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>{{getNameNegozio(item)}}</ion-card-subtitle>
+        <ion-card-title>{{item.breveDescrizione}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
 </ion-content>

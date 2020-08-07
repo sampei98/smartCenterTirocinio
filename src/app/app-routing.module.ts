@@ -80,6 +80,10 @@ const routes: Routes = [
   {
     path: 'converti-punti',
     loadChildren: () => import('./client/converti-punti/converti-punti.module').then( m => m.ConvertiPuntiPageModule)
+  },
+  {
+    path: 'detail-sale',
+    loadChildren: () => import('./client/detail-sale/detail-sale.module').then( m => m.DetailSalePageModule)
   }
 
 
