@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/mie-carte"></ion-back-button>
+    </ion-buttons>
+    <ion-title>{{carta}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card-title align="center">Carta {{carta}}</ion-card-title>
+
+  <div class="imgCenter">
+    <img src="../../../assets/carte/barcode.png" style="width: 50%;"/>
+  </div>
+
+  <ion-card>
+    <ion-header>
+      <ion-card-subtitle align="end">
+        <ion-icon name="card-outline" size="large"></ion-icon>
+      </ion-card-subtitle>
+      <ion-card-subtitle align="center">
+        Num. punti 2020
+      </ion-card-subtitle>
+      <ion-card-title align="center">
+        {{punti}}
+      </ion-card-title>
+    </ion-header>
+  </ion-card>
+
+</ion-content>

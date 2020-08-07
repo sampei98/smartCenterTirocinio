@@ -10,7 +10,7 @@ export class SuccessPage implements OnInit {
 
   message;
   id;
-  constructor(private route: ActivatedRoute,) { }
+  constructor(private route: ActivatedRoute) { }
 
   ngOnInit() {
     this.message = this.route.snapshot.paramMap.get('message');

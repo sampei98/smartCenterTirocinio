@@ -1,0 +1,32 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/mie-carte"></ion-back-button>
+    </ion-buttons>
+    <ion-title>aggiungiCarta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-header>
+      <ion-card-subtitle align="center"><ion-icon name="scan-circle-outline" size="large"></ion-icon></ion-card-subtitle>
+      <ion-card-title align="center">Aggiungi nuova carta</ion-card-title>
+    </ion-header>
+
+    <ion-card-content>
+      <ion-button expand="block" (click)="scan()">Clicca per scansionare</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-label color="success" align="center">
+    {{successMessage}}, <strong>{{datiLetti}}</strong>
+  </ion-label>
+
+    <ion-card>
+      <ion-card-subtitle align="center">La tua carta non viene scansionata?</ion-card-subtitle>
+      <ion-button expand="block" (click)="inserisciCarta()">Inserisci manualmente</ion-button>
+    </ion-card>
+
+</ion-content>

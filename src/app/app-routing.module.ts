@@ -80,6 +80,18 @@ const routes: Routes = [
   {
     path: 'converti-punti',
     loadChildren: () => import('./client/converti-punti/converti-punti.module').then( m => m.ConvertiPuntiPageModule)
+  },
+  {
+    path: 'mie-carte',
+    loadChildren: () => import('./client/mie-carte/mie-carte.module').then( m => m.MieCartePageModule)
+  },
+  {
+    path: 'dettagli-carta',
+    loadChildren: () => import('./client/dettagli-carta/dettagli-carta.module').then( m => m.DettagliCartaPageModule)
+  },
+  {
+    path: 'aggiungi-carta',
+    loadChildren: () => import('./client/aggiungi-carta/aggiungi-carta.module').then( m => m.AggiungiCartaPageModule)
   }
 
 
