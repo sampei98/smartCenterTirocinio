@@ -1,33 +1,14 @@
-import {Component, Injectable, OnInit} from '@angular/core';
-import {NavigationExtras, Router} from '@angular/router';
+import { Injectable } from '@angular/core';
 
-@Component({
-  selector: 'app-view-negozi',
-  templateUrl: './view-negozi.page.html',
-  styleUrls: ['./view-negozi.page.scss'],
+@Injectable({
+  providedIn: 'root'
 })
-export class ViewNegoziPage implements OnInit {
+export class NegoziServiceService {
   jsonData: any = [];
+  arrayProdotti: any [] = [];
+  constructor() { }
 
-  constructor(private router: Router) {
-    this.initializaJSONData();
-  }
-
-  ngOnInit() {
-  }
-
-  FilterJSONData(ev: any) {
-    this.initializaJSONData();
-    const val = ev.target.value;
-    if (val && val.trim() != '') {
-      this.jsonData = this.jsonData.filter((item) => {
-        return (item.name.toLowerCase().indexOf(val.toLowerCase()) > -1);
-      });
-    }
-  }
-
-  // @ts-ignore
-  initializaJSONData() {
+   initializaJSONData() {
     this.jsonData = [
       {
         src: '../../../assets/logoNegozi/mediaWorld.png',
@@ -37,13 +18,13 @@ export class ViewNegoziPage implements OnInit {
         valutazione: '4,6',
         cel: '0824 348125',
         prodotti : [
-            {
-          nameProdotto: 'APPLE iPhone 11 128GB Bianco',
-          dis: 'ipnhon',
-          prezzo: '700,99',
-          descrizione: 'aaaaaa',
-          srcPro: '../../../assets/prodotti/iphone.jpg'
-        },
+          {
+            nameProdotto: 'APPLE iPhone 11 128GB Bianco',
+            dis: 'ipnhon',
+            prezzo: '700,99',
+            descrizione: 'aaaaaa',
+            srcPro: '../../../assets/prodotti/iphone.jpg'
+          },
           {
             nameProdotto: 'SAMSUNG Galaxy S20 4G Cloud Blue',
             dis: '2',
@@ -132,14 +113,20 @@ export class ViewNegoziPage implements OnInit {
         cel: '0824 348112'
       },
     ];
+    return this.jsonData;
   }
-
-  intemClicked(item: any) {
-    const navigationExtras: NavigationExtras = {
-      queryParams : {
-        special: JSON.stringify(item)
+  getProdotti() {
+    this.arrayProdotti = [];
+    const r = this.jsonData.filter((elem) => {
+      return elem.prodotti;
+    });
+    for (let i = 0; i !== r.length; i++){
+      for (let j = 0 ; j !== r[i].prodotti.length; j++){
+        this.arrayProdotti.push(r[i].prodotti[j]);
       }
-    };
-    this.router.navigate(['detail-negozio'], navigationExtras);
+    }
+    return this.arrayProdotti;
+
+
   }
 }
