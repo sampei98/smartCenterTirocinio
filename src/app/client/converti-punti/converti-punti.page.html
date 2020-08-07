@@ -1,0 +1,90 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/miei-punti"></ion-back-button>
+    </ion-buttons>
+    <ion-title>convertiPunti</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-card>
+    <ion-card-header>
+      <ion-card-subtitle>Last balance update</ion-card-subtitle>
+      <ion-card-title>280 punti</ion-card-title>
+    </ion-card-header>
+  </ion-card>
+
+  <ion-item>
+    <ion-label>
+      Seleziona punti da convertire
+    </ion-label>
+  </ion-item>
+
+  <ion-grid class="centerItemGrid">
+    <ion-row>
+      <ion-col>
+        <ion-card (click)="convertiSuccess('10','1')">
+        <ion-header><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-header>
+        <ion-text>10 pt.</ion-text>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card (click)="convertiSuccess('20','2')">
+          <ion-header><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-header>
+          <ion-text>20 pt.</ion-text>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card (click)="convertiSuccess('50','5')">
+          <ion-header><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-header>
+          <ion-text>50 pt.</ion-text>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card (click)="convertiSuccess('100','10')">
+          <ion-header><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-header>
+          <ion-text>100 pt.</ion-text>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card (click)="convertiSuccess('200','20')">
+          <ion-header><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-header>
+          <ion-text>200 pt.</ion-text>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card (click)="convertiError()">
+          <ion-header><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-header>
+          <ion-text>500 pt.</ion-text>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+    <ion-row>
+      <ion-col>
+        <ion-card (click)="convertiError()">
+          <ion-header><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-header>
+          <ion-text>1000 pt.</ion-text>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card (click)="convertiError()">
+          <ion-header><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-header>
+          <ion-text>2000 pt.</ion-text>
+        </ion-card>
+      </ion-col>
+      <ion-col>
+        <ion-card (click)="convertiError()">
+          <ion-header><ion-icon name="add-circle-outline" size="large"></ion-icon></ion-header>
+          <ion-text>5000 pt.</ion-text>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+
+  </ion-grid>
+
+</ion-content>

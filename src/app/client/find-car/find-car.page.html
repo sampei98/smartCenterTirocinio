@@ -1,0 +1,24 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/profile-client"></ion-back-button>
+    </ion-buttons>
+    <ion-title>findCar</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-item>
+    <ion-card-subtitle align="center">La tua auto è parcheggiata in <strong>ZONA A, posto 21</strong></ion-card-subtitle>
+  </ion-item>
+
+  <ion-slides [options]="sliderOpts" zoom="" style="height: 350px">
+    <ion-slide >
+      <div class="swiper-zoom-container">
+        <img src="../../../assets/images/mappa-parcheggio.png">
+      </div>
+    </ion-slide>
+  </ion-slides>
+
+
+</ion-content>

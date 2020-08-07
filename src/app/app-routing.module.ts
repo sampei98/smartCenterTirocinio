@@ -68,6 +68,18 @@ const routes: Routes = [
   {
     path: 'invite-friend',
     loadChildren: () => import('./client/invite-friend/invite-friend.module').then( m => m.InviteFriendPageModule)
+  },
+  {
+    path: 'find-car',
+    loadChildren: () => import('./client/find-car/find-car.module').then( m => m.FindCarPageModule)
+  },
+  {
+    path: 'miei-punti',
+    loadChildren: () => import('./client/miei-punti/miei-punti.module').then( m => m.MieiPuntiPageModule)
+  },
+  {
+    path: 'converti-punti',
+    loadChildren: () => import('./client/converti-punti/converti-punti.module').then( m => m.ConvertiPuntiPageModule)
   }
 
 
