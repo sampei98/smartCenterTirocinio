@@ -88,7 +88,8 @@ export class NegoziServiceService {
             srcPro: '../../../assets/prodotti/costumeRalph.jpg'
           }
         ],
-        offerte : []
+        offerte : [],
+        recensione : []
       },
       {
         src: '../../../assets/logoNegozi/harmont.png',
@@ -97,7 +98,8 @@ export class NegoziServiceService {
         distanza: '19 mt',
         valutazione: '4,8',
         cel: '0824 348123',
-        offerte : []
+        offerte : [],
+        recensione : []
       },
       {
         src: '../../../assets/logoNegozi/yama.jpg',
@@ -106,7 +108,8 @@ export class NegoziServiceService {
         distanza: '19 mt',
         valutazione: '3,9',
         cel: '0824 348122',
-        offerte : []
+        offerte : [],
+        recensione : []
       },
       {
         src: '../../../assets/logoNegozi/tommy.png',
@@ -123,7 +126,8 @@ export class NegoziServiceService {
             dataInizio: 'oggi',
             dataFine: 'domani'
           }
-        ]
+        ],
+        recensione : []
       },
       {
         src: '../../../assets/logoNegozi/decathlon.png',
@@ -132,7 +136,8 @@ export class NegoziServiceService {
         distanza: '50 mt',
         valutazione: '4,6',
         cel: '0824 348117',
-        offerte : []
+        offerte : [],
+        recensione : []
       },
       {
         src: '../../../assets/logoNegozi/bata.png',
@@ -141,7 +146,8 @@ export class NegoziServiceService {
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
-        offerte : []
+        offerte : [],
+        recensione : []
       },
     ];
     return this.jsonData;
