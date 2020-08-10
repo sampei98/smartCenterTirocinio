@@ -7,6 +7,7 @@ export class NegoziServiceService {
   jsonData: any = [];
   arrayProdotti: any [] = [];
   arrayOfferte: any [] = [];
+  negozio: any;
   constructor() { }
 
    initializaJSONData() {
@@ -193,6 +194,15 @@ export class NegoziServiceService {
       }
     }
   }
+  getNegozioByName(ev: any){
+    for (let i = 0; i !== this.jsonData.length; i++){
+      console.log(this.jsonData[i].name);
+      console.log(ev.name);
+      if (this.jsonData[i].name === ev.name){
+        return this.jsonData[i];
+      }
+    }
+  }
   getNameNegozio(ev: any){
     for (let i = 0; i !== this.jsonData.length; i++){
       if (this.jsonData[i].name === ev.name){
@@ -207,5 +217,15 @@ export class NegoziServiceService {
       }
     }
   }
+  addRecensione(nameNegozio: any, val: string, ut: any, corpo: any, data: any){
+    for (let i = 0; i !== this.jsonData.length; i++){
+      if (this.jsonData[i].name === nameNegozio){
+       this.jsonData[i].recensione.push({valore: val, utente: ut, corpoRecensione: corpo, dataRecensione: data});
+       return this.jsonData[i];
+      }
+    }
+
+  }
+
 
 }
