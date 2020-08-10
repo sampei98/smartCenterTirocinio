@@ -97,13 +97,18 @@ const routes: Routes = [
   {
     path: 'detail-sale',
     loadChildren: () => import('./client/detail-sale/detail-sale.module').then( m => m.DetailSalePageModule)
-  },  {
+  },
+  {
     path: 'mio-wallet',
     loadChildren: () => import('./client/mio-wallet/mio-wallet.module').then( m => m.MioWalletPageModule)
   },
   {
     path: 'vota-app',
     loadChildren: () => import('./client/vota-app/vota-app.module').then( m => m.VotaAppPageModule)
+  },
+  {
+    path: 'supporto-assistenza',
+    loadChildren: () => import('./client/supporto-assistenza/supporto-assistenza.module').then( m => m.SupportoAssistenzaPageModule)
   },
   {
     path: 'detail-negozio-sale',
