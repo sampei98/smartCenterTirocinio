@@ -100,6 +100,10 @@ const routes: Routes = [
   },  {
     path: 'mio-wallet',
     loadChildren: () => import('./client/mio-wallet/mio-wallet.module').then( m => m.MioWalletPageModule)
+  },
+  {
+    path: 'vota-app',
+    loadChildren: () => import('./client/vota-app/vota-app.module').then( m => m.VotaAppPageModule)
   }
 
 
