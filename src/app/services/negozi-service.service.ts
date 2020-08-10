@@ -49,7 +49,13 @@ export class NegoziServiceService {
             dataInizio: 'oggi',
             dataFine: 'domani'
           }
-        ]
+        ],
+        recensione : [{
+          valore: '4',
+          utente: 'Maerio Inglese',
+          corpoRecensione: ' ahahahhahhahhaha',
+          dataRecensione: 'data'
+        }]
       },
       {
         src: '../../../assets/logoNegozi/ralph.png',

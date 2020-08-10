@@ -108,6 +108,10 @@ const routes: Routes = [
   {
     path: 'detail-negozio-sale',
     loadChildren: () => import('./client/detail-negozio-sale/detail-negozio-sale.module').then( m => m.DetailNegozioSalePageModule)
+  },
+  {
+    path: 'detail-negozio-voto',
+    loadChildren: () => import('./client/detail-negozio-voto/detail-negozio-voto.module').then( m => m.DetailNegozioVotoPageModule)
   }
 
 

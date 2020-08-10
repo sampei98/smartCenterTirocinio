@@ -35,7 +35,6 @@ export class DetailNegozioPage implements OnInit {
         special: JSON.stringify(this.data)
       }
     };
-    console.log(this.data.offerte.length);
     if (this.data.offerte.length > 0) {
       this.router.navigate(['detail-negozio-sale'], navigationExtras);
     } else {
@@ -51,7 +50,11 @@ export class DetailNegozioPage implements OnInit {
   }
 
   showRecensioni() {
-    alert('ciao');
-    console.log('recensioni');
+    const navigationExtras: NavigationExtras = {
+      queryParams: {
+        special: JSON.stringify(this.data)
+      }
+    };
+    this.router.navigate(['detail-negozio-voto'], navigationExtras);
   }
 }
