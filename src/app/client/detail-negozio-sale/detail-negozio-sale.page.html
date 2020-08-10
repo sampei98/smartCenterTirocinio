@@ -1,0 +1,22 @@
+<ion-header>
+  <ion-toolbar>
+  <ion-buttons slot="start">
+    <ion-back-button defaultHref="/view-negozi"></ion-back-button>
+  </ion-buttons>
+  <ion-title>{{data.name}}</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+  <ion-list>
+    <ion-card *ngFor="let item of data.offerte" (click)="intemClicked(item)">
+      <ion-img src={{data.src}}></ion-img>
+      <ion-card-header>
+        <ion-card-subtitle>{{data.name}}</ion-card-subtitle>
+        <ion-card-title>{{item.breveDescrizione}}</ion-card-title>
+      </ion-card-header>
+      <ion-card-content>
+      </ion-card-content>
+    </ion-card>
+  </ion-list>
+</ion-content>

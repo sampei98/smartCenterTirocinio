@@ -80,7 +80,8 @@ export class NegoziServiceService {
             descrizione: 'Questi calzoncini da mare foderati in rete sono perfetti per passare dalla spiaggia al lungomare in stile sportivo inconfondibilmente Polo.',
             srcPro: '../../../assets/prodotti/costumeRalph.jpg'
           }
-        ]
+        ],
+        offerte : []
       },
       {
         src: '../../../assets/logoNegozi/harmont.png',
@@ -88,7 +89,8 @@ export class NegoziServiceService {
         persone: '5/20',
         distanza: '19 mt',
         valutazione: '4,8',
-        cel: '0824 348123'
+        cel: '0824 348123',
+        offerte : []
       },
       {
         src: '../../../assets/logoNegozi/yama.jpg',
@@ -96,7 +98,8 @@ export class NegoziServiceService {
         persone: '0/13',
         distanza: '19 mt',
         valutazione: '3,9',
-        cel: '0824 348122'
+        cel: '0824 348122',
+        offerte : []
       },
       {
         src: '../../../assets/logoNegozi/tommy.png',
@@ -121,7 +124,8 @@ export class NegoziServiceService {
         persone: '79/80',
         distanza: '50 mt',
         valutazione: '4,6',
-        cel: '0824 348117'
+        cel: '0824 348117',
+        offerte : []
       },
       {
         src: '../../../assets/logoNegozi/bata.png',
@@ -129,7 +133,8 @@ export class NegoziServiceService {
         persone: '20/35',
         distanza: '40 mt',
         valutazione: '4,0',
-        cel: '0824 348112'
+        cel: '0824 348112',
+        offerte : []
       },
     ];
     return this.jsonData;

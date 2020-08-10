@@ -104,6 +104,10 @@ const routes: Routes = [
   {
     path: 'vota-app',
     loadChildren: () => import('./client/vota-app/vota-app.module').then( m => m.VotaAppPageModule)
+  },
+  {
+    path: 'detail-negozio-sale',
+    loadChildren: () => import('./client/detail-negozio-sale/detail-negozio-sale.module').then( m => m.DetailNegozioSalePageModule)
   }
 
 
