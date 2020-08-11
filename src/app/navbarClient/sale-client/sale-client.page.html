@@ -20,7 +20,7 @@
         <ion-slide *ngFor="let item of offVolantino">
           <ion-list>
             <ion-card (click)="intemClicked(item)">
-              <ion-img src={{getImgNegozio(item)}}></ion-img>
+              <ion-img src={{item.imgOfferta}}></ion-img>
               <ion-card-header>
                 <ion-card-subtitle>{{getNameNegozio(item)}}</ion-card-subtitle>
                 <ion-card-title>{{item.breveDescrizione}}</ion-card-title>
@@ -44,7 +44,7 @@
       <ion-slide *ngFor="let item of offBomba">
         <ion-list>
           <ion-card (click)="intemClicked(item)">
-            <ion-img src={{getImgNegozio(item)}}></ion-img>
+            <ion-img src={{item.imgOfferta}}></ion-img>
             <ion-card-header>
               <ion-card-subtitle>{{getNameNegozio(item)}}</ion-card-subtitle>
               <ion-card-title>{{item.breveDescrizione}}</ion-card-title>
@@ -68,7 +68,7 @@
       <ion-slide *ngFor="let item of offLampo">
         <ion-list>
           <ion-card (click)="intemClicked(item)">
-            <ion-img src={{getImgNegozio(item)}}></ion-img>
+            <ion-img src={{item.imgOfferta}}></ion-img>
             <ion-card-header>
               <ion-card-subtitle>{{getNameNegozio(item)}}</ion-card-subtitle>
               <ion-card-title>{{item.breveDescrizione}}</ion-card-title>

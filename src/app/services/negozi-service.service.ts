@@ -49,14 +49,8 @@ export class NegoziServiceService {
             descrizione: 'sono la descrizione lunga',
             tipo: 'volantino',
             dataInizio: 'oggi',
-            dataFine: 'domani'
-          },
-          {
-            breveDescrizione: 'Sottocosto mediaword',
-            descrizione: 'sono la descrizione lunga',
-            tipo: 'bomba',
-            dataInizio: 'oggi',
-            dataFine: 'domani'
+            dataFine: 'domani',
+            imgOfferta: '../../../assets/imgOfferte/offerta_mediaworld.jpg'
           }
         ],
         recensione : [{
@@ -97,17 +91,12 @@ export class NegoziServiceService {
           }
         ],
         offerte : [{
-          breveDescrizione: 'Sottocosto mediaword',
+          breveDescrizione: 'Sottocosto Ralph Lauren',
           descrizione: 'sono la descrizione lunga',
           tipo: 'bomba',
           dataInizio: 'oggi',
-          dataFine: 'domani'
-        }, {
-          breveDescrizione: 'Sottocosto mediaword',
-          descrizione: 'sono la descrizione lunga',
-          tipo: 'lampo',
-          dataInizio: 'oggi',
-          dataFine: 'domani'
+          dataFine: 'domani',
+          imgOfferta: '../../../assets/imgOfferte/offerta_ralphlauren.jpg'
         }
         ],
         recensione : []
@@ -139,21 +128,7 @@ export class NegoziServiceService {
         distanza: '22 mt',
         valutazione: '4,3',
         cel: '0824 348118',
-        offerte : [
-          {
-            breveDescrizione: 'Sottocosto tommy',
-            descrizione: 'sono la descrizione lunga',
-            tipo: 'lampo',
-            dataInizio: 'oggi',
-            dataFine: 'domani'
-          }, {
-            breveDescrizione: 'Sottocosto mediaword',
-            descrizione: 'sono la descrizione lunga',
-            tipo: 'volantino',
-            dataInizio: 'oggi',
-            dataFine: 'domani'
-          }
-        ],
+        offerte : [],
         recensione : []
       },
       {
@@ -173,20 +148,7 @@ export class NegoziServiceService {
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
-        offerte : [{
-          breveDescrizione: 'Sottocosto mediaword',
-          descrizione: 'sono la descrizione lunga',
-          tipo: 'volantino',
-          dataInizio: 'oggi',
-          dataFine: 'domani'
-        }, {
-          breveDescrizione: 'Sottocosto mediaword',
-          descrizione: 'sono la descrizione lunga',
-          tipo: 'lampo',
-          dataInizio: 'oggi',
-          dataFine: 'domani'
-        }
-        ],
+        offerte : [],
         recensione : []
       },
       {
@@ -198,10 +160,11 @@ export class NegoziServiceService {
         cel: '0824 348112',
         offerte : [{
           breveDescrizione: 'Sottocosto mondadori',
-          descrizione: 'sono la descrizione lunga',
+          descrizione: 'Su tutti gli Oscar Mondadori ti aspetta un -25%! Quale sarà il tuo libro sotto l\'ombrellone?',
           tipo: 'volantino',
           dataInizio: 'oggi',
-          dataFine: 'domani'
+          dataFine: 'domani',
+          imgOfferta: '../../../assets/imgOfferte/offerta_mondadori.jpg'
         }],
         recensione : []
       },
@@ -212,20 +175,7 @@ export class NegoziServiceService {
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
-        offerte : [{
-          breveDescrizione: 'Sottocosto calzedonia',
-          descrizione: 'sono la descrizione lunga',
-          tipo: 'bomba',
-          dataInizio: 'oggi',
-          dataFine: 'domani'
-        }, {
-          breveDescrizione: 'Sottocosto mediaword',
-          descrizione: 'sono la descrizione lunga',
-          tipo: 'lampo',
-          dataInizio: 'oggi',
-          dataFine: 'domani'
-        }
-        ],
+        offerte : [],
         recensione : []
       },
       {
@@ -235,14 +185,7 @@ export class NegoziServiceService {
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
-        offerte : [{
-          breveDescrizione: 'Sottocosto carpisa',
-          descrizione: 'sono la descrizione lunga',
-          tipo: 'volantino',
-          dataInizio: 'oggi',
-          dataFine: 'domani'
-        }
-        ],
+        offerte : [],
         recensione : []
       },
       {
@@ -252,14 +195,7 @@ export class NegoziServiceService {
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
-        offerte : [{
-          breveDescrizione: 'Sottocosto footlocker',
-          descrizione: 'sono la descrizione lunga',
-          tipo: 'lampo',
-          dataInizio: 'oggi',
-          dataFine: 'domani'
-        }
-        ],
+        offerte : [],
         recensione : []
       },
       {
@@ -269,14 +205,7 @@ export class NegoziServiceService {
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
-        offerte : [{
-          breveDescrizione: 'Sottocosto geox',
-          descrizione: 'sono la descrizione lunga',
-          tipo: 'lampo',
-          dataInizio: 'oggi',
-          dataFine: 'domani'
-        }
-        ],
+        offerte : [],
         recensione : []
       },
       {
@@ -286,14 +215,7 @@ export class NegoziServiceService {
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
-        offerte : [{
-          breveDescrizione: 'Sottocosto inside',
-          descrizione: 'sono la descrizione lunga',
-          tipo: 'bomba',
-          dataInizio: 'oggi',
-          dataFine: 'domani'
-        }
-        ],
+        offerte : [],
         recensione : []
       },
       {
@@ -303,14 +225,7 @@ export class NegoziServiceService {
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
-        offerte : [{
-          breveDescrizione: 'Sottocosto motivi',
-          descrizione: 'sono la descrizione lunga',
-          tipo: 'lampo',
-          dataInizio: 'oggi',
-          dataFine: 'domani'
-        }
-        ],
+        offerte : [],
         recensione : []
       },
       {
@@ -332,10 +247,11 @@ export class NegoziServiceService {
         cel: '0824 348112',
         offerte : [{
           breveDescrizione: 'Sottocosto super',
-          descrizione: 'sono la descrizione lunga',
-          tipo: 'lampo',
+          descrizione: 'In PIAZZA ITALIA i SALDI arrivano alla grande con sconti FINO AL 70%. Approfitta dei saldi sulla collezione primavera / estate uomo, donna e bambino. Cosa aspetti… corri nel tuo store PIAZZA ITALIA preferito.',
+          tipo: 'volantino',
           dataInizio: 'oggi',
-          dataFine: 'domani'
+          dataFine: 'domani',
+          imgOfferta: '../../../assets/imgOfferte/offerta_piazzaitalia.jpg'
         }
         ],
         recensione : []
@@ -347,14 +263,7 @@ export class NegoziServiceService {
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
-        offerte : [{
-          breveDescrizione: 'Sottocosto tezenis',
-          descrizione: 'sono la descrizione lunga',
-          tipo: 'volantino',
-          dataInizio: 'oggi',
-          dataFine: 'domani'
-        }
-        ],
+        offerte : [],
         recensione : []
       },
       {
@@ -369,7 +278,8 @@ export class NegoziServiceService {
           descrizione: 'sono la descrizione lunga',
           tipo: 'lampo',
           dataInizio: 'oggi',
-          dataFine: 'domani'
+          dataFine: 'domani',
+          imgOfferta: '../../../assets/imgOfferte/offerta_thun.jpg'
         }
         ],
         recensione : []
