@@ -8,15 +8,77 @@
 </ion-header>
 
 <ion-content>
-  <ion-list>
-    <ion-card *ngFor="let item of off" (click)="intemClicked(item)">
-      <ion-img src={{getImgNegozio(item)}}></ion-img>
-      <ion-card-header>
-        <ion-card-subtitle>{{getNameNegozio(item)}}</ion-card-subtitle>
-        <ion-card-title>{{item.breveDescrizione}}</ion-card-title>
-      </ion-card-header>
-      <ion-card-content>
-      </ion-card-content>
-    </ion-card>
-  </ion-list>
+
+  <div>
+    <ion-row>
+      <ion-col>
+        Offerta volantino
+      </ion-col>
+    </ion-row>
+
+    <ion-slides pager="true" [options]="sliderConfig">
+        <ion-slide *ngFor="let item of offVolantino">
+          <ion-list>
+            <ion-card (click)="intemClicked(item)">
+              <ion-img src={{getImgNegozio(item)}}></ion-img>
+              <ion-card-header>
+                <ion-card-subtitle>{{getNameNegozio(item)}}</ion-card-subtitle>
+                <ion-card-title>{{item.breveDescrizione}}</ion-card-title>
+              </ion-card-header>
+              <ion-card-content>
+              </ion-card-content>
+            </ion-card>
+          </ion-list>
+        </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div>
+    <ion-row>
+      <ion-col>
+        Offerta bomba
+      </ion-col>
+    </ion-row>
+
+    <ion-slides pager="true" [options]="sliderConfig">
+      <ion-slide *ngFor="let item of offBomba">
+        <ion-list>
+          <ion-card (click)="intemClicked(item)">
+            <ion-img src={{getImgNegozio(item)}}></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>{{getNameNegozio(item)}}</ion-card-subtitle>
+              <ion-card-title>{{item.breveDescrizione}}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+            </ion-card-content>
+          </ion-card>
+        </ion-list>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
+  <div>
+    <ion-row>
+      <ion-col>
+        Offerta lampo
+      </ion-col>
+    </ion-row>
+
+    <ion-slides pager="true" [options]="sliderConfig">
+      <ion-slide *ngFor="let item of offLampo">
+        <ion-list>
+          <ion-card (click)="intemClicked(item)">
+            <ion-img src={{getImgNegozio(item)}}></ion-img>
+            <ion-card-header>
+              <ion-card-subtitle>{{getNameNegozio(item)}}</ion-card-subtitle>
+              <ion-card-title>{{item.breveDescrizione}}</ion-card-title>
+            </ion-card-header>
+            <ion-card-content>
+            </ion-card-content>
+          </ion-card>
+        </ion-list>
+      </ion-slide>
+    </ion-slides>
+  </div>
+
 </ion-content>

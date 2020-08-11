@@ -7,13 +7,14 @@ export class NegoziServiceService {
   jsonData: any = [];
   arrayProdotti: any [] = [];
   arrayOfferte: any [] = [];
+  arrayOfferteTipo: any[] = [];
   negozio: any;
   constructor() { }
 
    initializaJSONData() {
     this.jsonData = [
       {
-        src: '../../../assets/logoNegozi/mediaWorld.png',
+        src: '../../../assets/logoNegozi/logo_mediaworld.jpg',
         name: 'Mediaworld',
         persone: '12/70',
         distanza: '10 mt',
@@ -49,6 +50,13 @@ export class NegoziServiceService {
             tipo: 'volantino',
             dataInizio: 'oggi',
             dataFine: 'domani'
+          },
+          {
+            breveDescrizione: 'Sottocosto mediaword',
+            descrizione: 'sono la descrizione lunga',
+            tipo: 'bomba',
+            dataInizio: 'oggi',
+            dataFine: 'domani'
           }
         ],
         recensione : [{
@@ -59,7 +67,7 @@ export class NegoziServiceService {
         }]
       },
       {
-        src: '../../../assets/logoNegozi/ralph.png',
+        src: '../../../assets/logoNegozi/logo_ralph.png',
         name: 'Ralph Lauren',
         persone: '17/45',
         distanza: '14 mt',
@@ -88,11 +96,24 @@ export class NegoziServiceService {
             srcPro: '../../../assets/prodotti/costumeRalph.jpg'
           }
         ],
-        offerte : [],
+        offerte : [{
+          breveDescrizione: 'Sottocosto mediaword',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'bomba',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }, {
+          breveDescrizione: 'Sottocosto mediaword',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'lampo',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }
+        ],
         recensione : []
       },
       {
-        src: '../../../assets/logoNegozi/harmont.png',
+        src: '../../../assets/logoNegozi/logo_harmon.jpg',
         name: 'Harmont&Blaine',
         persone: '5/20',
         distanza: '19 mt',
@@ -102,7 +123,7 @@ export class NegoziServiceService {
         recensione : []
       },
       {
-        src: '../../../assets/logoNegozi/yama.jpg',
+        src: '../../../assets/logoNegozi/logo_yama.png',
         name: 'Yamamay',
         persone: '0/13',
         distanza: '19 mt',
@@ -112,7 +133,7 @@ export class NegoziServiceService {
         recensione : []
       },
       {
-        src: '../../../assets/logoNegozi/tommy.png',
+        src: '../../../assets/logoNegozi/logo_tommy.png',
         name: 'TOMMY HILFIGER',
         persone: '9/34',
         distanza: '22 mt',
@@ -121,6 +142,12 @@ export class NegoziServiceService {
         offerte : [
           {
             breveDescrizione: 'Sottocosto tommy',
+            descrizione: 'sono la descrizione lunga',
+            tipo: 'lampo',
+            dataInizio: 'oggi',
+            dataFine: 'domani'
+          }, {
+            breveDescrizione: 'Sottocosto mediaword',
             descrizione: 'sono la descrizione lunga',
             tipo: 'volantino',
             dataInizio: 'oggi',
@@ -140,8 +167,155 @@ export class NegoziServiceService {
         recensione : []
       },
       {
-        src: '../../../assets/logoNegozi/bata.png',
+        src: '../../../assets/logoNegozi/logo_bata.jpg',
         name: 'Bata',
+        persone: '20/35',
+        distanza: '40 mt',
+        valutazione: '4,0',
+        cel: '0824 348112',
+        offerte : [{
+          breveDescrizione: 'Sottocosto mediaword',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'volantino',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }, {
+          breveDescrizione: 'Sottocosto mediaword',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'lampo',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }
+        ],
+        recensione : []
+      },
+      {
+        src: '../../../assets/logoNegozi/logo_mondadori.jpg',
+        name: 'Mondadori',
+        persone: '20/35',
+        distanza: '40 mt',
+        valutazione: '4,0',
+        cel: '0824 348112',
+        offerte : [{
+          breveDescrizione: 'Sottocosto mondadori',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'volantino',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }],
+        recensione : []
+      },
+      {
+        src: '../../../assets/logoNegozi/logo_calzedonia.jpg',
+        name: 'Calzedonia',
+        persone: '25/37',
+        distanza: '40 mt',
+        valutazione: '4,0',
+        cel: '0824 348112',
+        offerte : [{
+          breveDescrizione: 'Sottocosto calzedonia',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'bomba',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }, {
+          breveDescrizione: 'Sottocosto mediaword',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'lampo',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }
+        ],
+        recensione : []
+      },
+      {
+        src: '../../../assets/logoNegozi/logo_carpisa.jpg',
+        name: 'Carpisa',
+        persone: '20/35',
+        distanza: '40 mt',
+        valutazione: '4,0',
+        cel: '0824 348112',
+        offerte : [{
+          breveDescrizione: 'Sottocosto carpisa',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'volantino',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }
+        ],
+        recensione : []
+      },
+      {
+        src: '../../../assets/logoNegozi/logo_footlocker.jpg',
+        name: 'Footlocker',
+        persone: '20/35',
+        distanza: '40 mt',
+        valutazione: '4,0',
+        cel: '0824 348112',
+        offerte : [{
+          breveDescrizione: 'Sottocosto footlocker',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'lampo',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }
+        ],
+        recensione : []
+      },
+      {
+        src: '../../../assets/logoNegozi/logo_geox.jpg',
+        name: 'Geox',
+        persone: '20/35',
+        distanza: '40 mt',
+        valutazione: '4,0',
+        cel: '0824 348112',
+        offerte : [{
+          breveDescrizione: 'Sottocosto geox',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'lampo',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }
+        ],
+        recensione : []
+      },
+      {
+        src: '../../../assets/logoNegozi/logo_inside.jpg',
+        name: 'Inside',
+        persone: '20/35',
+        distanza: '40 mt',
+        valutazione: '4,0',
+        cel: '0824 348112',
+        offerte : [{
+          breveDescrizione: 'Sottocosto inside',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'bomba',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }
+        ],
+        recensione : []
+      },
+      {
+        src: '../../../assets/logoNegozi/logo_motivi.jpg',
+        name: 'Motivi',
+        persone: '20/35',
+        distanza: '40 mt',
+        valutazione: '4,0',
+        cel: '0824 348112',
+        offerte : [{
+          breveDescrizione: 'Sottocosto motivi',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'lampo',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }
+        ],
+        recensione : []
+      },
+      {
+        src: '../../../assets/logoNegozi/logo_originalmarines.jpg',
+        name: 'OriginalMarines',
         persone: '20/35',
         distanza: '40 mt',
         valutazione: '4,0',
@@ -149,6 +323,57 @@ export class NegoziServiceService {
         offerte : [],
         recensione : []
       },
+      {
+        src: '../../../assets/logoNegozi/logo_piazzaitalia.jpg',
+        name: 'Piazza italia',
+        persone: '20/35',
+        distanza: '40 mt',
+        valutazione: '4,0',
+        cel: '0824 348112',
+        offerte : [{
+          breveDescrizione: 'Sottocosto super',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'lampo',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }
+        ],
+        recensione : []
+      },
+      {
+        src: '../../../assets/logoNegozi/logo_tezenis.jpg',
+        name: 'Tezenis',
+        persone: '20/35',
+        distanza: '40 mt',
+        valutazione: '4,0',
+        cel: '0824 348112',
+        offerte : [{
+          breveDescrizione: 'Sottocosto tezenis',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'volantino',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }
+        ],
+        recensione : []
+      },
+      {
+        src: '../../../assets/logoNegozi/logo_thun.jpg',
+        name: 'Thun',
+        persone: '20/35',
+        distanza: '40 mt',
+        valutazione: '4,0',
+        cel: '0824 348112',
+        offerte : [{
+          breveDescrizione: 'Sottocosto thun',
+          descrizione: 'sono la descrizione lunga',
+          tipo: 'lampo',
+          dataInizio: 'oggi',
+          dataFine: 'domani'
+        }
+        ],
+        recensione : []
+      }
     ];
     return this.jsonData;
   }
@@ -175,6 +400,20 @@ export class NegoziServiceService {
       }
     }
     return this.arrayOfferte;
+  }
+  getOfferteByTipo(ev: string) {
+    this.arrayOfferteTipo = [];
+    const r = this.jsonData.filter((elem) => {
+      return elem.offerte;
+    });
+    for (let i = 0; i !== r.length; i++){
+      for (let j = 0 ; j !== r[i].offerte.length; j++){
+        if (r[i].offerte[j].tipo === ev){
+          this.arrayOfferteTipo.push(r[i].offerte[j]);
+        }
+      }
+    }
+    return this.arrayOfferteTipo;
   }
   getNegozioByOfferta(ev: any){
     const r = this.jsonData.filter((elem) => {

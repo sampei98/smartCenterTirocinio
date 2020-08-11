@@ -9,10 +9,21 @@ import {ActivatedRoute, NavigationExtras, Router} from '@angular/router';
 })
 export class SaleClientPage implements OnInit {
   off: any[];
+  offVolantino: any[];
+  offBomba: any[];
+  offLampo: any[];
+
+  sliderConfig = {
+    spaceBetween: 10,
+    centredSlides: true,
+    slidesPerView: 1,
+    speed: 1000
+  };
 
   constructor(private myService: NegoziServiceService, private route: ActivatedRoute, private router: Router) {
     this.off = myService.initializaJSONData();
     this.off = myService.getOfferte();
+    this.getOfferteTipologia();
   }
   ngOnInit() {
   }
@@ -31,5 +42,10 @@ export class SaleClientPage implements OnInit {
       }
     };
     this.router.navigate(['detail-sale'], navigationExtras);
+  }
+  getOfferteTipologia() {
+    this.offVolantino = this.myService.getOfferteByTipo('volantino');
+    this.offBomba = this.myService.getOfferteByTipo('bomba');
+    this.offLampo = this.myService.getOfferteByTipo('lampo');
   }
 }
