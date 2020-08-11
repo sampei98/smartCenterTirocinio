@@ -10,7 +10,7 @@
 <ion-content>
   <ion-list>
     <ion-card *ngFor="let item of data.offerte" (click)="intemClicked(item)">
-      <ion-img src={{data.src}}></ion-img>
+      <ion-img src={{item.imgOfferta}}></ion-img>
       <ion-card-header>
         <ion-card-subtitle>{{data.name}}</ion-card-subtitle>
         <ion-card-title>{{item.breveDescrizione}}</ion-card-title>

@@ -8,21 +8,17 @@
 </ion-header>
 
 <ion-content>
-  <ion-list lines="none">
-    <ion-item>
-      <ion-label>{{data.descrizione}}</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Data inizio offerta: </ion-label>
-      <ion-label>{{data.dataInizio}}</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Data fine offerta: </ion-label>
-      <ion-label>{{data.dataFine}}</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Tipo offerta: </ion-label>
-      <ion-label>{{data.tipo}}</ion-label>
-    </ion-item>
-  </ion-list>
+  <ion-img src={{data.imgOfferta}}></ion-img>
+
+  <ion-item>
+    <ion-textarea readonly value={{data.descrizione}} rows="5"></ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="calendar-outline"></ion-icon>
+    <ion-label>Valido da: <strong>{{data.dataInizio}}</strong> a: <strong>{{data.dataFine}}</strong></ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="pricetags-outline"></ion-icon>
+    <ion-label>Tipo offerta: <strong>{{data.tipo}}</strong></ion-label>
+  </ion-item>
 </ion-content>

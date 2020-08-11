@@ -9,42 +9,27 @@
 
 <ion-content>
   <ion-item>
-    <ion-label>Orari di apertura</ion-label>
+    <ion-label>Siamo qui: </ion-label>
   </ion-item>
-  <ion-list lines="none">
-    <ion-item>
-      <ion-label>Lunedì</ion-label>
-      <ion-label>8:30-21:00</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Martedì</ion-label>
-      <ion-label>8:30-21:00</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Mercoledì</ion-label>
-      <ion-label>8:30-21:00</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Giovedì</ion-label>
-      <ion-label>8:30-21:00</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Venerdì</ion-label>
-      <ion-label>8:30-21:00</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Sabato</ion-label>
-      <ion-label>8:30-21:00</ion-label>
-    </ion-item>
-    <ion-item>
-      <ion-label>Domenica</ion-label>
-      <ion-label>9:30-21:00</ion-label>
-    </ion-item>
-  </ion-list>
+  <ion-img src={{data.srcPos}}></ion-img>
 
   <ion-item>
-    <ion-label><ion-icon name="call"></ion-icon>  Recapito telefonico: {{data.cel}}</ion-label>
+    <ion-label>Descrizione: </ion-label>
   </ion-item>
+  <ion-item>
+    <ion-textarea readonly value={{data.descrizioneNegozio}} rows="5">
+    </ion-textarea>
+  </ion-item>
+  <ion-item>
+    <ion-label><ion-icon name="call"></ion-icon>  Recapito telefonico: <strong>{{data.cel}}</strong></ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label><ion-icon name="mail"></ion-icon>  Email: <strong>{{data.email}}</strong></ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-label><ion-icon name="exit"></ion-icon>  Sito web: <strong>{{data.sito}}</strong></ion-label>
+  </ion-item>
+
   <div class="container">
     <ion-button  shape="round"  (click)="showOfferte()" > Offerte <ion-icon name="chevron-forward"></ion-icon></ion-button>
     <ion-button  shape="round"  (click)="showRecensioni()" > Recensioni <ion-icon name="chevron-forward"></ion-icon></ion-button>
