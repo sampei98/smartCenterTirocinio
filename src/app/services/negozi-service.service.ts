@@ -59,20 +59,20 @@ export class NegoziServiceService {
         ],
         recensione : [{
           valore: '4',
-          utente: 'Maerio Inglese',
-          corpoRecensione: ' ahahahhahhahhaha',
-          dataRecensione: 'data'
+          utente: 'Mario Rossi',
+          corpoRecensione: 'Negozio spazioso e rifornito, nel rispetto delle regole anti-covid',
+          dataRecensione: 'ieri'
         }]
       },
       {
         src: '../../../assets/logoNegozi/logo_ralph.png',
-        srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
+        srcPos: '../../../assets/posNegozi/pos_geox.jpg',
         name: 'Ralph Lauren',
         persone: '17/45',
         distanza: '14 mt',
         valutazione: '4,1',
         cel: '0824 348124',
-        descrizioneNegozio: 'Ralph Lauren è il megastore specializzato di elettronica, informatica, tecnologia ed elettrodomestici numero 1 in Europa',
+        descrizioneNegozio: 'Ralph Lauren è il megastore specializzato di abbigliamento numero 1 in Europa',
         email: 'ralphlauren@negozio.com',
         sito: 'www.ralphlauren.it',
         prodotti : [
@@ -131,7 +131,7 @@ export class NegoziServiceService {
         distanza: '19 mt',
         valutazione: '3,9',
         cel: '0824 348122',
-        descrizioneNegozio: 'Ralph Lauren è il megastore specializzato di elettronica, informatica, tecnologia ed elettrodomestici numero 1 in Europa',
+        descrizioneNegozio: 'Yamamay è il megastore specializzato di elettronica, informatica, tecnologia ed elettrodomestici numero 1 in Europa',
         email: 'yama@negozio.com',
         sito: 'www.yama.it',
         offerte : [],
@@ -145,7 +145,7 @@ export class NegoziServiceService {
         distanza: '22 mt',
         valutazione: '4,3',
         cel: '0824 348118',
-        descrizioneNegozio: 'Ralph Lauren è il megastore specializzato di elettronica, informatica, tecnologia ed elettrodomestici numero 1 in Europa',
+        descrizioneNegozio: 'TOMMY HILFIGER è il megastore specializzato di elettronica, informatica, tecnologia ed elettrodomestici numero 1 in Europa',
         email: 'tommy@negozio.com',
         sito: 'www.tommy.it',
         offerte : [],
@@ -159,7 +159,7 @@ export class NegoziServiceService {
         distanza: '50 mt',
         valutazione: '4,6',
         cel: '0824 348117',
-        descrizioneNegozio: 'Ralph Lauren è il megastore specializzato di elettronica, informatica, tecnologia ed elettrodomestici numero 1 in Europa',
+        descrizioneNegozio: 'DECATHLON è il megastore specializzato di elettronica, informatica, tecnologia ed elettrodomestici numero 1 in Europa',
         email: 'decathlon@negozio.com',
         sito: 'www.decathlon.it',
         offerte : [],
@@ -173,7 +173,7 @@ export class NegoziServiceService {
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
-        descrizioneNegozio: 'Ralph Lauren è il megastore specializzato di elettronica, informatica, tecnologia ed elettrodomestici numero 1 in Europa',
+        descrizioneNegozio: 'Bata è il megastore specializzato di elettronica, informatica, tecnologia ed elettrodomestici numero 1 in Europa',
         email: 'bata@negozio.com',
         sito: 'www.bata.it',
         offerte : [],
@@ -211,7 +211,16 @@ export class NegoziServiceService {
         descrizioneNegozio: 'Ralph Lauren è il megastore specializzato di elettronica, informatica, tecnologia ed elettrodomestici numero 1 in Europa',
         email: 'calzedonia@negozio.com',
         sito: 'www.calzedonia.it',
-        offerte : [],
+        offerte : [
+          {
+            breveDescrizione: 'Sottocosto calzedonia',
+            descrizione: 'Acquistando almeno 3 capi, EXTRA - 20% sul tuo totale.\nInoltre fino al 27 Agosto, su ogni tuo acquisto ti regaliamo un CASHBACK del 50% della tua spesa.\nCosa aspetti? Inutile attendere i saldi.... ',
+            tipo: 'bomba',
+            dataInizio: 'oggi',
+            dataFine: 'domani',
+            imgOfferta: '../../../assets/imgOfferte/offerta_calzedonia.jpg'
+          }
+        ],
         recensione : []
       },
       {

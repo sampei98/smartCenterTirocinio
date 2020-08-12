@@ -16,7 +16,7 @@ export class SaleClientPage implements OnInit {
   sliderConfig = {
     spaceBetween: 10,
     centredSlides: true,
-    slidesPerView: 1,
+    slidesPerView: 1.4,
     speed: 1000
   };
 

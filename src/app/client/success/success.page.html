@@ -1,13 +1,19 @@
 
 <ion-content>
 
-  <ion-card>
+  <ion-card style="margin-top: 50px">
     <ion-card-header>
-      <ion-icon name="checkmark-circle" size="large" color="success"></ion-icon>
-      <ion-card-subtitle>Success message</ion-card-subtitle>
-      <ion-card-title>{{message}}<br>
-        <i>{{id}}</i></ion-card-title>
+      <ion-card-subtitle>
+        <ion-icon name="checkmark-circle" size="large" color="success"></ion-icon>
+        Success message
+      </ion-card-subtitle>
+      <ion-card-title>
+        {{message}}<br>
+        <i>{{id}}</i>
+      </ion-card-title>
     </ion-card-header>
   </ion-card>
-<ion-button type="primary" routerLink="/client">Torna home</ion-button>
+  <ion-button expand="block" type="primary" routerLink="/client">
+    Torna home
+  </ion-button>
 </ion-content>
