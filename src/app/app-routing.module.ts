@@ -11,6 +11,10 @@ const routes: Routes = [
     loadChildren: () => import('./home/home.module').then(m => m.HomePageModule)
   },
   {
+    path: '',
+    loadChildren: () => import('./home-commerciante/home-commerciante.module').then(m => m.HomeCommerciantePageModule)
+  },
+  {
     path: 'home-nav',
     loadChildren: () => import('./navbarClient/home-nav/home-nav.module').then( m => m.HomeNavPageModule)
   },
@@ -117,6 +121,30 @@ const routes: Routes = [
   {
     path: 'detail-negozio-voto',
     loadChildren: () => import('./client/detail-negozio-voto/detail-negozio-voto.module').then( m => m.DetailNegozioVotoPageModule)
+  },
+  {
+    path: 'home-commerciante',
+    loadChildren: () => import('./home-commerciante/home-commerciante.module').then( m => m.HomeCommerciantePageModule)
+  },
+  {
+    path: 'home-nav-commerciante',
+    loadChildren: () => import('./navbarCommerciante/home-nav-commerciante/home-nav-commerciante.module').
+    then( m => m.HomeNavCommerciantePageModule)
+  },
+  {
+    path: 'search-commerciante',
+    loadChildren: () => import('./navbarCommerciante/search-commerciante/search-commerciante.module').
+    then( m => m.SearchCommerciantePageModule)
+  },
+  {
+    path: 'video-commerciante',
+    loadChildren: () => import('./navbarCommerciante/video-commerciante/video-commerciante.module').
+    then( m => m.VideoCommerciantePageModule)
+  },
+  {
+    path: 'scansiona-commerciante',
+    loadChildren: () => import('./navbarCommerciante/scansiona-commerciante/scansiona-commerciante.module').
+    then( m => m.ScansionaCommerciantePageModule)
   }
 
 
