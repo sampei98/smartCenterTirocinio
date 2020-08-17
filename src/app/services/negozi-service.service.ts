@@ -26,6 +26,7 @@ export class NegoziServiceService {
         sito: 'www.mediaworld.it',
         prodotti : [
           {
+            id: '9960085496796',
             nameProdotto: 'APPLE iPhone 11 128GB Bianco',
             dis: '3',
             prezzo: '700,99',
@@ -33,6 +34,7 @@ export class NegoziServiceService {
             srcPro: '../../../assets/prodotti/iphone.jpg'
           },
           {
+            id: '9960085496795',
             nameProdotto: 'SAMSUNG Galaxy S20 4G Cloud Blue',
             dis: '2',
             prezzo: '899,99',
@@ -40,6 +42,7 @@ export class NegoziServiceService {
             srcPro: '../../../assets/prodotti/s20.jpg'
           },
           {
+            id: '9960085496794',
             nameProdotto: 'HUAWEI Matebook D 14',
             dis: '4',
             prezzo: '599,00',
@@ -77,6 +80,7 @@ export class NegoziServiceService {
         sito: 'www.ralphlauren.it',
         prodotti : [
           {
+            id: '9960085496790',
             nameProdotto: 'Maglietta in cotone',
             dis: '10',
             prezzo: '65,00',
@@ -84,6 +88,7 @@ export class NegoziServiceService {
             srcPro: '../../../assets/prodotti/magliaRalph.jpg'
           },
           {
+            id: '9960085496797',
             nameProdotto: 'Cappellino in chino di cotone',
             dis: '2',
             prezzo: '29,99',
@@ -91,6 +96,7 @@ export class NegoziServiceService {
             srcPro: '../../../assets/prodotti/cappellinoRalph.jpg'
           },
           {
+            id: '9960085496798',
             nameProdotto: 'Calzoncini da mare',
             dis: '4',
             prezzo: '89,00',
@@ -380,6 +386,19 @@ export class NegoziServiceService {
     }
     return this.arrayProdotti;
   }
+  getProdottiByIDAndNegozio(name: string, id: string){
+    for (let i = 0; i !== this.jsonData.length; i++){
+      if (this.jsonData[i].name === name){
+        this.negozio = this.jsonData[i];
+      }
+    }
+    console.log(this.negozio.name);
+    for (let i = 0; i !== this.negozio.prodotti.length; i++){
+      if (this.negozio.prodotti[i].id === id) {
+        return this.negozio.prodotti[i];
+      }
+    }
+  }
   getOfferte() {
     this.arrayOfferte = [];
     const r = this.jsonData.filter((elem) => {
@@ -433,7 +452,7 @@ export class NegoziServiceService {
   getNegozioByName(ev: any){
     for (let i = 0; i !== this.jsonData.length; i++){
       if (this.jsonData[i].name === ev.name){
-        console.log("trovato");
+        console.log('trovato');
         return this.jsonData[i];
       }
     }
@@ -441,7 +460,6 @@ export class NegoziServiceService {
   getNegozioByNameString(ev: string){
     for (let i = 0; i !== this.jsonData.length; i++){
       if (this.jsonData[i].name === ev){
-        console.log("trovato");
         return this.jsonData[i];
       }
     }

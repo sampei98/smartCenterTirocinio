@@ -1,9 +1,28 @@
 <ion-header>
   <ion-toolbar>
-    <ion-title>scansiona-commerciante</ion-title>
+    <ion-title>{{negozio.name}}</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+  <ion-card>
+    <ion-header>
+      <ion-card-subtitle align="center"><ion-icon name="scan-circle-outline" size="large"></ion-icon></ion-card-subtitle>
+      <ion-card-title align="center">Aggiungi nuova carta </ion-card-title>
+    </ion-header>
 
+    <ion-card-content>
+      <ion-button expand="block" (click)="scan()">Clicca per scansionare</ion-button>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-label color="success" align="center">
+    {{successMessage}}, <strong>{{datiLetti}}</strong>
+  </ion-label>
+
+  <ion-card>
+    <ion-card-subtitle align="center">Codice non scansionato?</ion-card-subtitle>
+    <ion-input placeholder="Codice" type="text" [(ngModel)]="codiceProdotto"></ion-input>
+    <ion-button expand="block" (click)="inserisciCodice()">Inserisci manualmente codice</ion-button>
+  </ion-card>
 </ion-content>
