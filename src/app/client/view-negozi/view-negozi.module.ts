@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { ViewNegoziPageRoutingModule } from './view-negozi-routing.module';
 
 import { ViewNegoziPage } from './view-negozi.page';
+import {HomePageModule} from '../../home/home.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    ViewNegoziPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        ViewNegoziPageRoutingModule,
+        HomePageModule
+    ],
     declarations: [ViewNegoziPage]
 })
 export class ViewNegoziPageModule {}

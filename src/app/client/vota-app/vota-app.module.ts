@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { VotaAppPageRoutingModule } from './vota-app-routing.module';
 
 import { VotaAppPage } from './vota-app.page';
+import {HomePageModule} from '../../home/home.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    VotaAppPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        VotaAppPageRoutingModule,
+        HomePageModule
+    ],
   declarations: [VotaAppPage]
 })
 export class VotaAppPageModule {}

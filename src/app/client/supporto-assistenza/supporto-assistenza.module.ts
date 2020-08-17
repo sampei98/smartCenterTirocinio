@@ -7,14 +7,16 @@ import { IonicModule } from '@ionic/angular';
 import { SupportoAssistenzaPageRoutingModule } from './supporto-assistenza-routing.module';
 
 import { SupportoAssistenzaPage } from './supporto-assistenza.page';
+import {HomePageModule} from '../../home/home.module';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    SupportoAssistenzaPageRoutingModule
-  ],
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        SupportoAssistenzaPageRoutingModule,
+        HomePageModule
+    ],
   declarations: [SupportoAssistenzaPage]
 })
 export class SupportoAssistenzaPageModule {}
