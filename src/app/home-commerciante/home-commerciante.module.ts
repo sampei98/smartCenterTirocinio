@@ -9,12 +9,15 @@ import { HomeCommerciantePageRoutingModule } from './home-commerciante-page-rout
 import { HomeCommerciantePage } from './home-commerciante.page';
 
 @NgModule({
-  imports: [
-    CommonModule,
-    FormsModule,
-    IonicModule,
-    HomeCommerciantePageRoutingModule
-  ],
-  declarations: [HomeCommerciantePage]
+    imports: [
+        CommonModule,
+        FormsModule,
+        IonicModule,
+        HomeCommerciantePageRoutingModule
+    ],
+    exports: [
+        HomeCommerciantePage
+    ],
+    declarations: [HomeCommerciantePage]
 })
 export class HomeCommerciantePageModule {}

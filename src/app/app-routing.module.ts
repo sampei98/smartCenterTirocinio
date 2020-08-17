@@ -60,7 +60,8 @@ const routes: Routes = [
   },
   {
     path: 'detail-negozio-product-info',
-    loadChildren: () => import('./client/detail-negozio-product-info/detail-negozio-product-info.module').then( m => m.DetailNegozioProductInfoPageModule)
+    loadChildren: () => import('./client/detail-negozio-product-info/detail-negozio-product-info.module').
+    then( m => m.DetailNegozioProductInfoPageModule)
   },
   {
     path: 'scontrino',
@@ -145,6 +146,10 @@ const routes: Routes = [
     path: 'scansiona-commerciante',
     loadChildren: () => import('./navbarCommerciante/scansiona-commerciante/scansiona-commerciante.module').
     then( m => m.ScansionaCommerciantePageModule)
+  },
+  {
+    path: 'product-detail',
+    loadChildren: () => import('./commerciante/product-detail/product-detail.module').then( m => m.ProductDetailPageModule)
   }
 
 

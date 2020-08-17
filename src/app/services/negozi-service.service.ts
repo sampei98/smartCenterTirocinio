@@ -432,9 +432,16 @@ export class NegoziServiceService {
   }
   getNegozioByName(ev: any){
     for (let i = 0; i !== this.jsonData.length; i++){
-      console.log(this.jsonData[i].name);
-      console.log(ev.name);
       if (this.jsonData[i].name === ev.name){
+        console.log("trovato");
+        return this.jsonData[i];
+      }
+    }
+  }
+  getNegozioByNameString(ev: string){
+    for (let i = 0; i !== this.jsonData.length; i++){
+      if (this.jsonData[i].name === ev){
+        console.log("trovato");
         return this.jsonData[i];
       }
     }
