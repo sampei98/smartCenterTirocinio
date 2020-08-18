@@ -1,0 +1,53 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Crea offerta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h2 style="text-align: center; text-transform: capitalize; margin-bottom: 50px">
+    Seleziona tipologia offerta:
+  </h2>
+
+
+  <ion-card (click)="selezionaOfferta('lampo')">
+    <ion-header>
+      <ion-card-title>
+        <ion-icon name="flash-outline" size="large">
+        </ion-icon>
+        Offerta Lampo
+      </ion-card-title>
+    </ion-header>
+  </ion-card>
+
+
+  <ion-card (click)="selezionaOfferta('bomba')">
+    <ion-header>
+      <ion-card-title>
+        <ion-icon name="flame-outline">
+        </ion-icon>
+        Offerta Bomba
+      </ion-card-title>
+    </ion-header>
+  </ion-card>
+
+  <ion-card (click)="selezionaOfferta('volantino')">
+    <ion-header>
+      <ion-card-title>
+        <ion-icon name="newspaper-outline">
+        </ion-icon>
+        Offerta Volantino
+      </ion-card-title>
+    </ion-header>
+  </ion-card>
+
+  <ion-footer class="fixed">
+    <ion-toolbar>
+      <app-home-commerciante></app-home-commerciante>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

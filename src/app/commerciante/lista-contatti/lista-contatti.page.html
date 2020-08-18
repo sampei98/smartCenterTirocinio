@@ -1,0 +1,92 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Lista Clienti</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-item>
+    <ion-label position="floating">Seleziona data <ion-text color="danger">*</ion-text></ion-label>
+    <ion-datetime [(ngModel)]="data" (ionChange)="mostraLista()" (ionCancel)="mostraListaVuota()"></ion-datetime>
+  </ion-item>
+
+  <ion-list id="listaPersone">
+    <ion-item>
+      <ion-icon name="person-outline" slot="start">
+      </ion-icon>
+      <ion-label>
+        <h2>ID00001</h2>
+        <p>Permanenza: <strong>30 min.</strong></p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="person-outline" slot="start">
+      </ion-icon>
+      <ion-label>
+        <h2>ID00002</h2>
+        <p>Permanenza: <strong>10 min.</strong></p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="person-outline" slot="start">
+      </ion-icon>
+      <ion-label>
+        <h2>ID00005</h2>
+        <p>Permanenza: <strong>15 min.</strong></p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="person-outline" slot="start">
+      </ion-icon>
+      <ion-label>
+        <h2>ID00007</h2>
+        <p>Permanenza: <strong>50 min.</strong></p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="person-outline" slot="start">
+      </ion-icon>
+      <ion-label>
+        <h2>ID00027</h2>
+        <p>Permanenza: <strong>20 min.</strong></p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="person-outline" slot="start">
+      </ion-icon>
+      <ion-label>
+        <h2>ID00025</h2>
+        <p>Permanenza: <strong>50 min.</strong></p>
+      </ion-label>
+    </ion-item>
+
+    <ion-item>
+      <ion-icon name="person-outline" slot="start">
+      </ion-icon>
+      <ion-label>
+        <h2>ID00015</h2>
+        <p>Permanenza: <strong>10 min.</strong></p>
+      </ion-label>
+    </ion-item>
+
+  </ion-list>
+
+  <ion-button expand="full" (click)="inserisciNew()" style="margin-top: 25px">
+    Invia notifica contagio
+  </ion-button>
+
+  <ion-footer class="fixed">
+    <ion-toolbar>
+      <app-home-commerciante></app-home-commerciante>
+    </ion-toolbar>
+  </ion-footer>
+</ion-content>

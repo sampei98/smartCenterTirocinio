@@ -150,7 +150,19 @@ const routes: Routes = [
   {
     path: 'product-detail',
     loadChildren: () => import('./commerciante/product-detail/product-detail.module').then( m => m.ProductDetailPageModule)
+  },  {
+    path: 'crea-offerta',
+    loadChildren: () => import('./commerciante/crea-offerta/crea-offerta.module').then( m => m.CreaOffertaPageModule)
+  },
+  {
+    path: 'crea-offerta-form',
+    loadChildren: () => import('./commerciante/crea-offerta-form/crea-offerta-form.module').then( m => m.CreaOffertaFormPageModule)
+  },
+  {
+    path: 'lista-contatti',
+    loadChildren: () => import('./commerciante/lista-contatti/lista-contatti.module').then( m => m.ListaContattiPageModule)
   }
+
 
 
 

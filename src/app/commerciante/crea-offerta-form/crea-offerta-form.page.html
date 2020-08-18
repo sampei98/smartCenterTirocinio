@@ -1,0 +1,56 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-buttons slot="start">
+      <ion-back-button defaultHref="/"></ion-back-button>
+    </ion-buttons>
+    <ion-title>Crea offerta</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <h2 style="text-align: center; text-transform: capitalize">
+    {{tipo}}
+  </h2>
+
+  <ion-item>
+    <ion-label position="floating">Nome offerta <ion-text color="danger">*</ion-text> </ion-label>
+    <ion-input [(ngModel)]="nome"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Anteprima descrizione <ion-text color="danger">*</ion-text></ion-label>
+    <ion-input [(ngModel)]="breveDescr"></ion-input>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Descrizione <ion-text color="danger">*</ion-text></ion-label>
+    <ion-textarea [(ngModel)]="lungaDescr" rows="4"></ion-textarea>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Data inizio <ion-text color="danger">*</ion-text></ion-label>
+    <ion-datetime [(ngModel)]="dataInizio"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Data fine <ion-text color="danger">*</ion-text></ion-label>
+    <ion-datetime [(ngModel)]="dataFine"></ion-datetime>
+  </ion-item>
+
+  <ion-item>
+    <ion-label position="floating">Immagine <ion-text color="danger">*</ion-text></ion-label>
+    <ion-input [(ngModel)]="img"></ion-input>
+  </ion-item>
+
+  <ion-button expand="full" (click)="addOfferta()">
+    Aggiungi
+  </ion-button>
+
+  <ion-footer class="fixed">
+    <ion-toolbar>
+      <app-home-commerciante></app-home-commerciante>
+    </ion-toolbar>
+  </ion-footer>
+
+</ion-content>
