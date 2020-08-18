@@ -29,6 +29,11 @@ const routes: Routes = [
         then( m => m.VideoCommerciantePageModule)
       },
       {
+        path: 'notification',
+        loadChildren: () => import('../navbarCommerciante/notification-commerciante/notification-commerciante.module').
+        then( m => m.NotificationCommerciantePageModule)
+      },
+      {
         path: '',
         loadChildren: () => import('../navbarCommerciante/home-nav-commerciante/home-nav-commerciante.module').
         then( m => m.HomeNavCommerciantePageModule)

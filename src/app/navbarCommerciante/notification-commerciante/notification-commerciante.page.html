@@ -1,0 +1,65 @@
+<ion-header>
+  <ion-toolbar>
+    <ion-title>notification-commerciante</ion-title>
+  </ion-toolbar>
+</ion-header>
+
+<ion-content>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="notifications-outline" slot="start"></ion-icon>
+      <ion-label>Assembramenti zona A</ion-label>
+      <ion-button slot="end" (click)="presentAlert('Assembramenti zona A', 'Nella zona A ci sono 30 persone')"><ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+    </ion-item>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label color="medium">
+          Nella zona A ci sono 30 persone
+        </ion-label>
+      </ion-item>
+      <div class="orario">
+        <ion-label>9:20 AM</ion-label>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="notifications-outline" slot="start"></ion-icon>
+      <ion-label>Distanziamento non rispettato</ion-label>
+      <ion-button slot="end" (click)="presentAlert('Distanziamento non rispettato', 'Nella zona C non sono rispettati i distanziamenti tra le persone.')"><ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+    </ion-item>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label color="medium">
+          Nella zona C non sono rispettati i distanziamenti tra le persone.
+        </ion-label>
+      </ion-item>
+      <div class="orario">
+        <ion-label>Yesterday</ion-label>
+      </div>
+    </ion-card-content>
+  </ion-card>
+
+  <ion-card>
+    <ion-item>
+      <ion-icon name="notifications-outline" slot="start"></ion-icon>
+      <ion-label>Persona contagiata in negozio</ion-label>
+      <ion-button slot="end" (click)="presentAlert('Persona contagiata in negozio', 'L\'utente ID0000012 ha comunicato di essere risultato positivo al Covid19 ed è stato anche nel vostro negozio in data 18/08/2020')"><ion-icon name="arrow-forward-outline"></ion-icon></ion-button>
+    </ion-item>
+
+    <ion-card-content>
+      <ion-item>
+        <ion-label color="medium">
+          L'utente ID0000012 ha comunicato di essere risultato positivo al Covid19 ed è stato anche nel vostro negozio in data 18/08/2020
+        </ion-label>
+      </ion-item>
+      <div class="orario">
+        <ion-label>18 Aug</ion-label>
+      </div>
+    </ion-card-content>
+  </ion-card>
+</ion-content>
