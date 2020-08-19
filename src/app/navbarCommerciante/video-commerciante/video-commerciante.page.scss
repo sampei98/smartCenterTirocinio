@@ -1,0 +1,49 @@
+
+.legenda{
+  text-align: center;
+}
+
+.colonna {
+  background-color: white;
+  border: 1px solid;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+  margin-top: -10px;
+}
+
+.colonna1 {
+  margin-right: 5px;
+}
+
+.colonna2 {
+  margin-right: 5px;
+}
+
+.colonna3 {
+  margin-right: -5px;
+}
+
+.colonna4 {
+  margin-left: -5px;
+}
+
+.colonna5 {
+  margin-left: 5px;
+}
+
+.colonna6 {
+  margin-left: 5px;
+}
+
+ion-badge {
+  --padding-bottom: 5px;
+  --padding-top: 5px;
+}
+
+.colonnaFreccia {
+  background-color: white;
+  text-align: center;
+  padding-top: 3px;
+  padding-bottom: 3px;
+}
