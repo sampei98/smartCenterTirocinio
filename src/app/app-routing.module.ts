@@ -167,7 +167,11 @@ const routes: Routes = [
     path: 'notification-commerciante',
     loadChildren: () => import('./navbarCommerciante/notification-commerciante/notification-commerciante.module').
     then( m => m.NotificationCommerciantePageModule)
+  },  {
+    path: 'detail-videocamera',
+    loadChildren: () => import('./commerciante/detail-videocamera/detail-videocamera.module').then( m => m.DetailVideocameraPageModule)
   }
+
 
 
 
