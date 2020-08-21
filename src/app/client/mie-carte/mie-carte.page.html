@@ -3,23 +3,20 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/profile-client"></ion-back-button>
     </ion-buttons>
-    <ion-title>mieCarte</ion-title>
+    <ion-title>Carte fedeltà</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
 
-  <ion-card>
-    <ion-item>
-      <ion-icon name="receipt-outline"></ion-icon>
-      <ion-label>AGGIUNGI</ion-label>
-      <ion-button fill="outline" slot="end" routerLink="/aggiungi-carta">Clicca per aggiungere</ion-button>
-    </ion-item>
-  </ion-card>
+
+  <h3 style="text-align: center">Vuoi aggiungere una nuova carta?</h3>
+  <ion-button shape="round" routerLink="/aggiungi-carta" expand="full" style="padding-left: 20px; padding-right: 20px">Clicca per aggiungere</ion-button>
+
+
 
   <ion-card>
     <ion-item>
-      <ion-icon name="receipt-outline"></ion-icon>
       <ion-label>CONAD</ion-label>
       <ion-button fill="outline" slot="end" routerLink="/dettagli-carta/CONAD">Apri</ion-button>
     </ion-item>
@@ -30,7 +27,6 @@
 
   <ion-card>
     <ion-item>
-      <ion-icon name="receipt-outline"></ion-icon>
       <ion-label>DECATHLON</ion-label>
       <ion-button fill="outline" slot="end" routerLink="/dettagli-carta/DECATHLON">Apri</ion-button>
     </ion-item>

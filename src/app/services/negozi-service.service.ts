@@ -55,8 +55,8 @@ export class NegoziServiceService {
             breveDescrizione: 'Sottocosto mediaword',
             descrizione: 'Media World è il megastore specializzato di elettronica, informatica, tecnologia ed elettrodomestici numero 1 in Europa',
             tipo: 'volantino',
-            dataInizio: 'oggi',
-            dataFine: 'domani',
+            dataInizio: '21-08.2020',
+            dataFine: '31-08-2020',
             imgOfferta: '../../../assets/imgOfferte/offerta_mediaworld.jpg'
           }
         ],
@@ -106,10 +106,10 @@ export class NegoziServiceService {
         ],
         offerte : [{
           breveDescrizione: 'Sottocosto Ralph Lauren',
-          descrizione: 'sono la descrizione lunga',
+          descrizione: 'Acquistando almeno 3 capi, EXTRA - 50% sul tuo totale.\nInoltre fino al 27 Agosto, su ogni tuo acquisto ti regaliamo un CASHBACK del 50% della tua spesa.\nCosa aspetti? Inutile attendere i saldi.... ',
           tipo: 'bomba',
-          dataInizio: 'oggi',
-          dataFine: 'domani',
+          dataInizio: '22-08-2020',
+          dataFine: '27-08-2020',
           imgOfferta: '../../../assets/imgOfferte/offerta_ralphlauren.jpg'
         }
         ],
@@ -222,8 +222,8 @@ export class NegoziServiceService {
             breveDescrizione: 'Sottocosto calzedonia',
             descrizione: 'Acquistando almeno 3 capi, EXTRA - 20% sul tuo totale.\nInoltre fino al 27 Agosto, su ogni tuo acquisto ti regaliamo un CASHBACK del 50% della tua spesa.\nCosa aspetti? Inutile attendere i saldi.... ',
             tipo: 'bomba',
-            dataInizio: 'oggi',
-            dataFine: 'domani',
+            dataInizio: '21-08-2020',
+            dataFine: '22-08-2020',
             imgOfferta: '../../../assets/imgOfferte/offerta_calzedonia.jpg'
           }
         ],
@@ -328,8 +328,8 @@ export class NegoziServiceService {
           breveDescrizione: 'Sottocosto super',
           descrizione: 'In PIAZZA ITALIA i SALDI arrivano alla grande con sconti FINO AL 70%. Approfitta dei saldi sulla collezione primavera / estate uomo, donna e bambino. Cosa aspetti… corri nel tuo store PIAZZA ITALIA preferito.',
           tipo: 'volantino',
-          dataInizio: 'oggi',
-          dataFine: 'domani',
+          dataInizio: '25-08-2020',
+          dataFine: '07-09-2020',
           imgOfferta: '../../../assets/imgOfferte/offerta_piazzaitalia.jpg'
         }
         ],
@@ -362,10 +362,10 @@ export class NegoziServiceService {
         sito: 'www.thun.it',
         offerte : [{
           breveDescrizione: 'Sottocosto thun',
-          descrizione: 'sono la descrizione lunga',
+          descrizione: 'Acquistando almeno 3 pezzi, il meno caro te lo regaliamo noi',
           tipo: 'lampo',
-          dataInizio: 'oggi',
-          dataFine: 'domani',
+          dataInizio: '23-08-2020 12:15',
+          dataFine: '23-08-2020 14:15',
           imgOfferta: '../../../assets/imgOfferte/offerta_thun.jpg'
         }
         ],

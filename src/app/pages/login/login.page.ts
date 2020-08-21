@@ -26,7 +26,7 @@ export class LoginPage implements OnInit {
   login() {
     this.negozio = this.myService.getNegozioByNameString(this.username);
     if (this.username === 'cliente' && this.password === 'cliente') {
-      this.router.navigate(['/client']);
+      this.router.navigate(['/client/home']);
     } else if (this.negozio !== undefined) {
       NegozioComponent.negozio = this.negozio;
       this.router.navigate(['/commerciante/home']);

@@ -18,11 +18,11 @@ export class ConvertiPuntiPage implements OnInit {
   async convertiSuccess(punti, soldi) {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
-      header: 'Confirm!',
+      header: 'Conferma!',
       message: 'Vuoi convertire ' + punti + ' punti per ' + soldi + ' euro?',
       buttons: [
         {
-          text: 'Cancel',
+          text: 'No',
           role: 'cancel',
           cssClass: 'secondary',
           handler: (blah) => {

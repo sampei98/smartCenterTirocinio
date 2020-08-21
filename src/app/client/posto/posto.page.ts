@@ -33,11 +33,11 @@ export class PostoPage implements OnInit {
   async postoLibero(posto) {
     const alert = await this.alertController.create({
       cssClass: 'my-custom-class',
-      header: 'Confirm!',
+      header: 'Conferma!',
       message: 'Vuoi prenotare il posto selezionato?',
       buttons: [
         {
-          text: 'Cancel',
+          text: 'No',
           role: 'cancel',
           cssClass: 'secondary',
           handler: (blah) => {

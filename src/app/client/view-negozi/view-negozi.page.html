@@ -9,7 +9,7 @@
 
 <ion-content>
   <ion-toolbar>
-    <ion-searchbar (ionInput)="FilterJSONData($event)"></ion-searchbar>
+    <ion-searchbar (ionInput)="FilterJSONData($event)" style="padding-top: 5px;"></ion-searchbar>
   </ion-toolbar>
   <ion-list>
     <ion-card *ngFor="let item of jsonData;" (click)="intemClicked(item)">
