@@ -1,32 +1,31 @@
-<ion-header class="header-login">
-  <app-logo></app-logo>
-</ion-header>
-
 <ion-content>
-
-<div class="container">
-  <div class="container-item-top">
-    <h1>LOGIN</h1>
-  </div>
-        <div class="container-item-center">
-          <ion-item class="row">
-            <ion-icon class="icon" name="person"></ion-icon>
-            <ion-input placeholder="Username" type="text" [(ngModel)]="username"></ion-input>
-          </ion-item>
-
-          <ion-item class="row">
-            <ion-icon class="icon" name="lock-open"></ion-icon>
-            <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
-          </ion-item>
+    <div class="flex-container">
+        <div class="header-login">
+            <img class="logo-img" src="assets/images/logo.png" alt="LOGO">
         </div>
+        <div class="container">
+          <div class="container-item-top">
+            <h1>Accedi</h1>
+          </div>
+                <div class="container-item-center">
+                  <ion-item class="row">
+                    <ion-icon class="icon" name="person"></ion-icon>
+                    <ion-input placeholder="Username" type="text" [(ngModel)]="username"></ion-input>
+                  </ion-item>
 
-        <div class="container-item-bottom">
-          <ion-button  shape="round" (click)="login()" >Login</ion-button>
-          <ion-item trasparent class="registrazione">
-            Don't have an account?<a routerLink="/signup">Create account</a>
-          </ion-item>
+                  <ion-item class="row">
+                    <ion-icon class="icon" name="lock-open"></ion-icon>
+                    <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
+                  </ion-item>
+                </div>
+
+                <div class="container-item-bottom">
+                  <ion-button  shape="round" (click)="login()" >Accedi</ion-button>
+                  <ion-item trasparent class="registrazione">
+                    Non hai un account?<a routerLink="/signup">Registrati</a>
+                  </ion-item>
+                </div>
+
         </div>
-
-</div>
-
+    </div>
 </ion-content>

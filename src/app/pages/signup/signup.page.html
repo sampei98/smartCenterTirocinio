@@ -1,36 +1,41 @@
-<ion-header class="header-login">
-  <app-logo></app-logo>
-</ion-header>
+
 
 <ion-content>
-
-  <div class="container">
-    <div class="container-item-top">
-      <h1>Create Account</h1>
+  <div class="flex-container">
+    <div class="header-login">
+      <img class="logo-img" src="assets/images/logo.png" alt="LOGO">
     </div>
-    <div class="container-item-center">
-      <ion-item class="row">
-        <ion-icon class="icon" name="mail"></ion-icon>
-        <ion-input placeholder="Email" type="text"></ion-input>
-      </ion-item>
+    <div class="container">
+      <div class="container-item-top">
+        <h1>Crea Account</h1>
+      </div>
+      <div class="container-item-center">
+        <ion-item class="row">
+          <ion-icon class="icon" name="mail"></ion-icon>
+          <ion-input placeholder="Email" type="email" [(ngModel)]="email"></ion-input>
+        </ion-item>
 
-      <ion-item class="row">
-        <ion-icon class="icon" name="person"></ion-icon>
-        <ion-input placeholder="Username" type="text"></ion-input>
-      </ion-item>
+        <ion-item class="row">
+          <ion-icon class="icon" name="person"></ion-icon>
+          <ion-input placeholder="Username" type="text" [(ngModel)]="username"></ion-input>
+        </ion-item>
 
-      <ion-item class="row">
-        <ion-icon class="icon" name="lock-open"></ion-icon>
-        <ion-input placeholder="Password" type="password" ></ion-input>
-      </ion-item>
-    </div>
+        <ion-item class="row">
+          <ion-icon class="icon" name="lock-open"></ion-icon>
+          <ion-input placeholder="Password" type="password" [(ngModel)]="password"></ion-input>
+        </ion-item>
+        <ion-item>
+          <ion-icon name="information-circle"></ion-icon>
+          <ion-text style="font-size: x-small">La tua password deve avere: minimo 8 caratteri, lettere minuscole, lattere maiuscole e almeno un numero</ion-text>
+        </ion-item>
+      </div>
 
-    <div class="container-item-bottom">
-      <ion-button  shape="round" >Sign up</ion-button>
-      <ion-item trasparent class="registrazione">
-        Already you have an account? <a routerLink="/login">Login </a>
-      </ion-item>
+      <div class="container-item-bottom">
+        <ion-button  shape="round" (click)="registrazione()">Registrati</ion-button>
+        <ion-item trasparent class="registrazione">
+          Sei già registrato? <a routerLink="/login">Accedi </a>
+        </ion-item>
+      </div>
     </div>
   </div>
-
 </ion-content>
