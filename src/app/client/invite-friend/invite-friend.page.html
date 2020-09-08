@@ -3,50 +3,42 @@
     <ion-buttons slot="start">
       <ion-back-button defaultHref="/profile-client"></ion-back-button>
     </ion-buttons>
-    <ion-title>inviteFriend</ion-title>
+    <ion-title>Invita un amico</ion-title>
   </ion-toolbar>
 </ion-header>
 
 <ion-content>
+<div class="div-center">
+    <div class="centerDiv">
+      <ion-card-subtitle>
+        Invita un amico e riceverete entrambi 20 punti sul wallet!
+      </ion-card-subtitle>
+    </div>
 
-  <div class="centerDiv">
-    <ion-card-subtitle>
-      Invita un amico e riceverete entrambi 20 punti sul wallet!
-    </ion-card-subtitle>
+    <div class="centerDiv">
+      <ion-item>
+        <ion-label><a href="#">www.smartcenter.com/52892596/join</a></ion-label>
+      </ion-item>
+    </div>
+
+    <ion-fab horizontal="center">
+      <ion-fab-button>
+        <ion-icon name="share"></ion-icon>
+      </ion-fab-button>
+      <ion-fab-list side="top">
+        <ion-fab-button (click)="invitaAmico('Whatsapp')"><ion-icon name="logo-whatsapp"></ion-icon></ion-fab-button>
+      </ion-fab-list>
+      <ion-fab-list side="bottom">
+        <ion-fab-button (click)="invitaAmico('Facebook')"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
+      </ion-fab-list>
+      <ion-fab-list side="start">
+        <ion-fab-button (click)="invitaAmico('Instagram')"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
+      </ion-fab-list>
+      <ion-fab-list side="end">
+        <ion-fab-button (click)="invitaAmico('Twitter')"><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
+      </ion-fab-list>
+    </ion-fab>
   </div>
-
-  <div class="centerDiv">
-    <ion-item>
-      <ion-label><a href="#">www.smartcenter.com/52892596/join</a></ion-label>
-    </ion-item>
-  </div>
-
-  <ion-fab vertical="center" horizontal="center" slot="fixed">
-    <ion-fab-button>
-      <ion-icon name="share"></ion-icon>
-    </ion-fab-button>
-    <ion-fab-list side="top">
-      <ion-fab-button (click)="invitaAmico('Whatsapp')"><ion-icon name="logo-whatsapp"></ion-icon></ion-fab-button>
-    </ion-fab-list>
-    <ion-fab-list side="bottom">
-      <ion-fab-button (click)="invitaAmico('Facebook')"><ion-icon name="logo-facebook"></ion-icon></ion-fab-button>
-    </ion-fab-list>
-    <ion-fab-list side="start">
-      <ion-fab-button (click)="invitaAmico('Instagram')"><ion-icon name="logo-instagram"></ion-icon></ion-fab-button>
-    </ion-fab-list>
-    <ion-fab-list side="end">
-      <ion-fab-button (click)="invitaAmico('Twitter')"><ion-icon name="logo-twitter"></ion-icon></ion-fab-button>
-    </ion-fab-list>
-  </ion-fab>
-
-  <!--
-  <div class="centerDiv">
-    <ion-button>
-      Invia
-      <ion-icon name="arrow-forward-circle-outline" slot="end"></ion-icon>
-    </ion-button>
-  </div>
-  -->
 
   <ion-footer class="fixed">
     <ion-toolbar>

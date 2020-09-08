@@ -14,9 +14,19 @@
   </h1>
   <img src={{prodotto.srcPro}}>
   <ion-item>
+    <ion-icon name="barcode-outline"></ion-icon>
+    <ion-label>Codice: </ion-label>
+    <ion-label><strong>{{prodotto.id}}</strong></ion-label>
+  </ion-item>
+  <ion-item>
     <ion-icon name="cash-outline"></ion-icon>
     <ion-label>Prezzo: </ion-label>
     <ion-label><strong>{{prodotto.prezzo}}&euro;</strong></ion-label>
+  </ion-item>
+  <ion-item>
+    <ion-icon name="map-outline"></ion-icon>
+    <ion-label>Posizione: </ion-label>
+    <ion-label><strong>C5S2</strong></ion-label>
   </ion-item>
   <ion-item>
     <ion-icon name="albums-outline"></ion-icon>

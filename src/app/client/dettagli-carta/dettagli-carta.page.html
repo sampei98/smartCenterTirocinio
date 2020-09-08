@@ -9,26 +9,24 @@
 
 <ion-content>
 
-  <ion-card-title align="center">Carta {{carta}}</ion-card-title>
+  <div class="div-center">
+    <ion-card-title align="center">Carta {{carta}}</ion-card-title>
 
-  <div class="imgCenter">
-    <img src="../../../assets/carte/barcode.png" style="width: 50%;"/>
+    <div class="imgCenter">
+      <img src="../../../assets/carte/barcode.png" style="width: 50%;"/>
+    </div>
+
+    <ion-card>
+      <ion-header>
+        <ion-card-subtitle align="center">
+          Num. punti 2020
+        </ion-card-subtitle>
+        <ion-card-title align="center">
+          {{punti}}
+        </ion-card-title>
+      </ion-header>
+    </ion-card>
   </div>
-
-  <ion-card>
-    <ion-header>
-      <ion-card-subtitle align="end">
-        <ion-icon name="card-outline" size="large"></ion-icon>
-      </ion-card-subtitle>
-      <ion-card-subtitle align="center">
-        Num. punti 2020
-      </ion-card-subtitle>
-      <ion-card-title align="center">
-        {{punti}}
-      </ion-card-title>
-    </ion-header>
-  </ion-card>
-
   <ion-footer class="fixed">
     <ion-toolbar>
       <app-home></app-home>
