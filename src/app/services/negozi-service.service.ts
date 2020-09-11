@@ -8,6 +8,7 @@ export class NegoziServiceService {
   arrayProdotti: any [] = [];
   arrayOfferte: any [] = [];
   arrayOfferteTipo: any[] = [];
+  arrayColore: any[] = [];
   negozio: any;
   constructor() { }
 
@@ -17,7 +18,8 @@ export class NegoziServiceService {
         src: '../../../assets/logoNegozi/logo_mediaworld.jpg',
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'Mediaworld',
-        persone: '12/70',
+        persone: '20/70',
+        coloreAffollamento: 'verde',
         distanza: '10 mt',
         valutazione: '4,6',
         cel: '0824 348125',
@@ -72,6 +74,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_geox.jpg',
         name: 'Ralph Lauren',
         persone: '17/45',
+        coloreAffollamento: 'giallo',
         distanza: '14 mt',
         valutazione: '4,1',
         cel: '0824 348124',
@@ -120,6 +123,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'Harmont&Blaine',
         persone: '5/20',
+        coloreAffollamento: 'verde',
         distanza: '19 mt',
         valutazione: '4,8',
         cel: '0824 348123',
@@ -134,6 +138,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'Yamamay',
         persone: '0/13',
+        coloreAffollamento: 'verde',
         distanza: '19 mt',
         valutazione: '3,9',
         cel: '0824 348122',
@@ -148,6 +153,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'TOMMY HILFIGER',
         persone: '9/34',
+        coloreAffollamento: 'giallo',
         distanza: '22 mt',
         valutazione: '4,3',
         cel: '0824 348118',
@@ -162,6 +168,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'DECATHLON',
         persone: '79/80',
+        coloreAffollamento: 'rosso',
         distanza: '50 mt',
         valutazione: '4,6',
         cel: '0824 348117',
@@ -176,6 +183,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'Bata',
         persone: '20/35',
+        coloreAffollamento: 'giallo',
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
@@ -190,6 +198,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'Mondadori',
         persone: '20/35',
+        coloreAffollamento: 'giallo',
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
@@ -211,6 +220,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'Calzedonia',
         persone: '25/37',
+        coloreAffollamento: 'giallo',
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
@@ -234,6 +244,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'Carpisa',
         persone: '20/35',
+        coloreAffollamento: 'rosso',
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
@@ -248,6 +259,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'Footlocker',
         persone: '20/35',
+        coloreAffollamento: 'verde',
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
@@ -262,6 +274,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'Geox',
         persone: '20/35',
+        coloreAffollamento: 'giallo',
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
@@ -276,6 +289,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'Inside',
         persone: '20/35',
+        coloreAffollamento: 'rosso',
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
@@ -290,6 +304,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'Motivi',
         persone: '20/35',
+        coloreAffollamento: 'giallo',
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
@@ -304,6 +319,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'OriginalMarines',
         persone: '20/35',
+        coloreAffollamento: 'verde',
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
@@ -318,6 +334,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'Piazza italia',
         persone: '20/35',
+        coloreAffollamento: 'verde',
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
@@ -340,6 +357,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'Tezenis',
         persone: '20/35',
+        coloreAffollamento: 'verde',
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
@@ -354,6 +372,7 @@ export class NegoziServiceService {
         srcPos: '../../../assets/posNegozi/pos_mediaworld.jpg',
         name: 'Thun',
         persone: '20/35',
+        coloreAffollamento: 'rosso',
         distanza: '40 mt',
         valutazione: '4,0',
         cel: '0824 348112',
@@ -486,6 +505,29 @@ export class NegoziServiceService {
       }
     }
 
+  }
+  getNegozioByColorAffollamento(coloreAssembramento){
+    this.arrayColore = [];
+    for (let i = 0; i !== this.jsonData.length; i++){
+      if (this.jsonData[i].coloreAffollamento === 'verde'){
+        this.arrayColore.push(this.jsonData[i]);
+      }
+    }
+    if (coloreAssembramento === 'giallo' || coloreAssembramento === 'rosso') {
+      for (let i = 0; i !== this.jsonData.length; i++) {
+        if (this.jsonData[i].coloreAffollamento === 'giallo') {
+          this.arrayColore.push(this.jsonData[i]);
+        }
+      }
+    }
+    if (coloreAssembramento === 'rosso') {
+      for (let i = 0; i !== this.jsonData.length; i++) {
+        if (this.jsonData[i].coloreAffollamento === 'rosso') {
+          this.arrayColore.push(this.jsonData[i]);
+        }
+      }
+    }
+    return this.arrayColore;
   }
 
 

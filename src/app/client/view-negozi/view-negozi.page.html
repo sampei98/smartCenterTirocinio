@@ -11,11 +11,29 @@
   <ion-toolbar>
     <ion-searchbar (ionInput)="FilterJSONData($event)" style="padding-top: 5px;"></ion-searchbar>
   </ion-toolbar>
+  <ion-item>
+    <ion-icon name="people-circle-outline" size="large"></ion-icon>
+    <ion-label>Filtra per livello assembramento:</ion-label>
+    <ion-button (click)="visualizzaDistanza()">Clear</ion-button>
+  </ion-item>
+  <div style="text-align: center">
+    <ion-button color="success" (click)="visualizzaAssembramenti('verde')">Basso</ion-button>
+    <ion-button color="warning" (click)="visualizzaAssembramenti('giallo')">Fino a Medio</ion-button>
+    <ion-button color="danger" (click)="visualizzaAssembramenti('rosso')">Fino a Alto</ion-button>
+  </div>
   <ion-list>
     <ion-card *ngFor="let item of jsonData;" (click)="intemClicked(item)">
       <ion-img src={{item.src}}></ion-img>
       <ion-card-header>
-        <ion-card-subtitle>
+        <ion-card-subtitle *ngIf="item.coloreAffollamento === 'verde'" color="success">
+          <ion-icon name="people-outline"></ion-icon>
+          Persone: {{item.persone}}
+        </ion-card-subtitle>
+        <ion-card-subtitle *ngIf="item.coloreAffollamento === 'giallo'" color="warning">
+          <ion-icon name="people-outline"></ion-icon>
+          Persone: {{item.persone}}
+        </ion-card-subtitle>
+        <ion-card-subtitle *ngIf="item.coloreAffollamento === 'rosso'" color="danger">
           <ion-icon name="people-outline"></ion-icon>
           Persone: {{item.persone}}
         </ion-card-subtitle>
